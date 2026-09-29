@@ -2208,3 +2208,41 @@ img, svg {
     gap: 2rem;
     margin-bottom: 4rem;
 }
+
+
+/* ==========================================================================
+   ESTILOS PARA THIAGO PIRES (TP) NO PORTAL
+   ========================================================================== */
+:root {
+    --tp-gradient: linear-gradient(135deg, #003882 0%, #0066cc 50%, #0284c7 100%);
+}
+
+.tp-avatar {
+    background: var(--tp-gradient) !important;
+    color: #ffffff !important;
+}
+
+.tp-gradient {
+    background: var(--tp-gradient) !important;
+    color: #ffffff !important;
+}
+
+.portal-card.tp-card::before {
+    background: var(--tp-gradient);
+}
+
+.portal-btn-primary.tp-btn {
+    background: var(--tp-gradient);
+    box-shadow: 0 4px 14px rgba(0, 102, 204, 0.25);
+}
+
+.portal-btn-primary.tp-btn:hover {
+    box-shadow: 0 6px 20px rgba(0, 102, 204, 0.35);
+}
+
+.portal-grid-4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
