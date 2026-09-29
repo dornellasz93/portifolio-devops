@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfólio Profissional e Acadêmico de Thiago Pires - Estudante de Engenharia de Software no UGB/FERP | Volta Redonda - RJ">
+    <title>Thiago Pires • Portfólio Profissional &amp; Acadêmico | UGB/FERP</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Favicon com Logo UGB -->
+    <link rel="icon" type="image/png" href="logo_ugb.png">
+    <!-- Folha de Estilos Exclusiva em CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#hero" class="nav-logo">
+                <img src="logo_ugb.png" alt="Logo UGB FERP" class="nav-logo-img">
+                <span class="nav-logo-text"><span class="logo-bracket">&lt;</span>Thiago<span
+                        class="logo-accent">.Pires</span><span class="logo-bracket">/&gt;</span></span>
+            </a>
+
+            <!-- Toggle de Menu Mobile (CSS Puro com Checkbox) -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+            <label for="nav-toggle" class="nav-toggle-label" aria-label="Abrir Menu">
+                <span class="hamburger"></span>
+            </label>
+
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#sobre" class="nav-link">Sobre Mim</a></li>
+                    <li class="nav-item"><a href="#experiencia" class="nav-link">Experiência</a></li>
+                    <li class="nav-item"><a href="#formacao" class="nav-link">Formação</a></li>
+                    <li class="nav-item"><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                    <li class="nav-item"><a href="#contato" class="nav-link nav-link-btn">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ================= HERO SECTION ================= -->
+        <section class="hero" id="hero">
+            <div class="hero-container container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <img src="logo_ugb.png" alt="Logo UGB" class="badge-logo-img">
+                        <span class="pulse-dot"></span> 1º Semestre • Engenharia de Software • UGB/FERP
+                    </div>
+                    <h1 class="hero-title">
+                        Thiago <span class="gradient-text">Pires</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Estudante de Engenharia de Software no Centro Universitário Geraldo Di Biase (UGB/FERP). Busco
+                        uma oportunidade profissional para desenvolver minhas habilidades, adquirir novos conhecimentos
+                        e contribuir ativamente com a equipe e a empresa.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#experiencia" class="btn btn-primary">
+                            Ver Experiências
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="7" y1="17" x2="17" y2="7"></line>
+                                <polyline points="7 7 17 7 17 17"></polyline>
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/5524993180240" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-whatsapp" title="Conversar no WhatsApp">
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+                            </svg>
+                            WhatsApp
+                        </a>
+                        <a href="https://www.linkedin.com/in/thiago-pires" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-linkedin" title="Ver Perfil LinkedIn">
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                            LinkedIn
+                        </a>
+                    </div>
+
+                    <!-- Quick Meta Badges -->
+                    <div class="hero-quick-stats">
+                        <div class="quick-stat-card">
+                            <div class="quick-stat-icon">🎂</div>
+                            <div class="quick-stat-meta">
+                                <strong>20 Anos</strong>
+                                <span>Idade</span>
+                            </div>
+                        </div>
+                        <div class="quick-stat-card">
+                            <div class="quick-stat-icon">📍</div>
+                            <div class="quick-stat-meta">
+                                <strong>Volta Redonda – RJ</strong>
+                                <span>Localização</span>
+                            </div>
+                        </div>
+                        <div class="quick-stat-card">
+                            <div class="quick-stat-icon">🎓</div>
+                            <div class="quick-stat-meta">
+                                <strong>1º Semestre</strong>
+                                <span>Eng. de Software</span>
+                            </div>
+                        </div>
+                        <div class="quick-stat-card">
+                            <div class="quick-stat-icon">🏍️</div>
+                            <div class="quick-stat-meta">
+                                <strong>CNH Categoria A</strong>
+                                <span>Habilitação Moto</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <!-- Interactive Terminal with Tabs -->
+                    <div class="code-card">
+                        <div class="code-card-header">
+                            <span class="dot dot-red"></span>
+                            <span class="dot dot-yellow"></span>
+                            <span class="dot dot-green"></span>
+                            <div class="code-tabs">
+                                <button type="button" class="code-tab active"
+                                    onclick="switchTab(this, 'perfil')">thiago_perfil.json</button>
+                                <button type="button" class="code-tab"
+                                    onclick="switchTab(this, 'habilidades')">habilidades.py</button>
+                                <button type="button" class="code-tab"
+                                    onclick="switchTab(this, 'experiencias')">experiencias.yml</button>
+                            </div>
+                        </div>
+
+                        <!-- Tab 1: Thiago JSON -->
+                        <div id="tab-perfil" class="code-tab-content active">
+                            <pre class="code-body"><code><span class="token-comment">// Currículo & Perfil Profissional</span>
+{
+  <span class="token-key">"nome"</span>: <span class="token-string">"Thiago Pires"</span>,
+  <span class="token-key">"idade"</span>: <span class="token-number">20</span>,
+  <span class="token-key">"localizacao"</span>: <span class="token-string">"Volta Redonda – RJ"</span>,
+  <span class="token-key">"email"</span>: <span class="token-string">"thiagopires1605@gmail.com"</span>,
+  <span class="token-key">"whatsapp"</span>: <span class="token-string">"(24) 99318-0240"</span>,
+  <span class="token-key">"linkedin"</span>: <span class="token-string">"linkedin.com/in/thiago-pires"</span>,
+  <span class="token-key">"formacao"</span>: <span class="token-string">"Engenharia de Software (UGB/FERP)"</span>,
+  <span class="token-key">"status_academico"</span>: <span class="token-string">"Em andamento – 1º semestre"</span>,
+  <span class="token-key">"cnh"</span>: <span class="token-string">"Categoria A (Motocicleta)"</span>,
+  <span class="token-key">"objetivo"</span>: <span class="token-string">"Desenvolver habilidades, novos conhecimentos e contribuir com a equipe."</span>
+}</code></pre>
+                        </div>
+
+                        <!-- Tab 2: Habilidades Python -->
+                        <div id="tab-habilidades" class="code-tab-content">
+                            <pre class="code-body"><code><span class="token-comment"># Competências & Habilidades</span>
+<span class="token-keyword">class</span> <span class="token-class">PerfilThiagoPires</span>:
+    <span class="token-keyword">def</span> __init__(self):
+        self.soft_skills = [
+            <span class="token-string">"Facilidade para aprender"</span>,
+            <span class="token-string">"Responsabilidade e pontualidade"</span>,
+            <span class="token-string">"Boa comunicação"</span>,
+            <span class="token-string">"Organização"</span>,
+            <span class="token-string">"Trabalho em equipe"</span>
+        ]
+        self.qualificacoes = [
+            <span class="token-string">"CNH Categoria A"</span>,
+            <span class="token-string">"Experiência com motocicleta e entregas"</span>,
+            <span class="token-string">"Atendimento a clientes e estabelecimentos"</span>
+        ]
+        self.contato = {
+            <span class="token-string">"email"</span>: <span class="token-string">"thiagopires1605@gmail.com"</span>,
+            <span class="token-string">"whatsapp"</span>: <span class="token-string">"(24) 99318-0240"</span>
+        }</code></pre>
+                        </div>
+
+                        <!-- Tab 3: Experiencias YAML -->
+                        <div id="tab-experiencias" class="code-tab-content">
+                            <pre class="code-body"><code><span class="token-comment"># Trajetória Profissional</span>
+<span class="token-key">experiencias</span>:
+  - <span class="token-key">empresa</span>: <span class="token-string">"iFood"</span>
+    <span class="token-key">funcao</span>: <span class="token-string">"Motoboy"</span>
+    <span class="token-key">atividades</span>:
+      - <span class="token-string">"Entregas utilizando motocicleta"</span>
+      - <span class="token-string">"Atendimento aos clientes e estabelecimentos"</span>
+      - <span class="token-string">"Organização e cumprimento de rotas"</span>
+  - <span class="token-key">empresa</span>: <span class="token-string">"Zen Cozinha Oriental"</span>
+    <span class="token-key">funcao</span>: <span class="token-string">"Folguista"</span>
+    <span class="token-key">atividades</span>:
+      - <span class="token-string">"Atuação em diferentes funções operacionais"</span>
+      - <span class="token-string">"Atendimento e suporte às rotinas"</span>
+      - <span class="token-string">"Organização e auxílio à equipe"</span></code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SOBRE MIM ================= -->
+        <section class="section sobre" id="sobre">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">01. Apresentação</span>
+                    <h2 class="section-title">Sobre Mim</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <!-- Card Principal de Apresentação -->
+                <div class="profile-main-card">
+                    <div class="profile-avatar-box">
+                        <div class="tp-avatar-large">TP</div>
+                        <div class="ugb-pill">
+                            <img src="logo_ugb.png" alt="Logo UGB">
+                            <span>UGB / FERP</span>
+                        </div>
+                    </div>
+                    <div class="profile-info">
+                        <h3>Thiago Pires</h3>
+                        <span class="profile-role">20 anos • Volta Redonda – RJ • Graduando em Engenharia de
+                            Software</span>
+
+                        <div class="profile-objective-box">
+                            <strong>Objetivo Profissional</strong>
+                            <p>
+                                Busco uma oportunidade profissional para desenvolver minhas habilidades, adquirir novos
+                                conhecimentos e contribuir ativamente com a equipe e a empresa.
+                            </p>
+                        </div>
+
+                        <div class="profile-pills">
+                            <span class="profile-pill">📍 Volta Redonda – RJ</span>
+                            <span class="profile-pill">🎓 UGB/FERP – 1º Semestre</span>
+                            <span class="profile-pill">🏍️ CNH Categoria A</span>
+                            <a href="mailto:thiagopires1605@gmail.com" class="profile-pill"
+                                style="color: var(--ugb-navy); text-decoration: none;">✉️ thiagopires1605@gmail.com</a>
+                            <a href="https://wa.me/5524993180240" target="_blank" rel="noopener noreferrer"
+                                class="profile-pill" style="color: var(--accent-emerald); font-weight: 700;">💬 (24)
+                                99318-0240</a>
+                            <a href="https://www.linkedin.com/in/thiago-pires" target="_blank" rel="noopener noreferrer"
+                                class="profile-pill" style="color: var(--ugb-royal); font-weight: 700;">💼 LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Métricas & Destaques -->
+                <div class="sobre-highlights">
+                    <div class="highlight-item">
+                        <span class="highlight-num">20</span>
+                        <span class="highlight-label">Anos de Idade</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-num">VR-RJ</span>
+                        <span class="highlight-label">Volta Redonda</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-num">1º Sem</span>
+                        <span class="highlight-label">Engenharia de Software</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-num">Cat. A</span>
+                        <span class="highlight-label">CNH Motocicleta</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= EXPERIÊNCIA PROFISSIONAL ================= -->
+        <section class="section experiencia" id="experiencia">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">02. Trajetória Prática</span>
+                    <h2 class="section-title">Experiência Profissional</h2>
+                    <p class="section-desc">Vivência prática no mercado de trabalho com foco em dinamismo, organização
+                        de rotas, atendimento e suporte operacional.</p>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="experiencias-grid">
+                    <!-- Experiência 1: Motoboy - iFood -->
+                    <article class="exp-card">
+                        <div class="exp-card-header">
+                            <div class="exp-company-meta">
+                                <div class="exp-icon">🛵</div>
+                                <div>
+                                    <h3 class="exp-title">Motoboy</h3>
+                                    <span class="exp-company">iFood</span>
+                                </div>
+                            </div>
+                            <span class="exp-type-badge">Logística &amp; Entregas</span>
+                        </div>
+
+                        <div class="exp-activities-title">Principais Responsabilidades &amp; Atividades:</div>
+                        <ul class="exp-activities-list">
+                            <li>
+                                <span class="exp-bullet">•</span>
+                                <span><strong>Realização de entregas utilizando motocicleta:</strong> Condução ágil e
+                                    segura em ambiente urbano, zelando pela integridade dos produtos.</span>
+                            </li>
+                            <li>
+                                <span class="exp-bullet">•</span>
+                                <span><strong>Atendimento aos clientes e estabelecimentos:</strong> Relacionamento
+                                    cordial, profissionalismo e comunicação eficaz em todas as etapas da entrega.</span>
+                            </li>
+                            <li>
+                                <span class="exp-bullet">•</span>
+                                <span><strong>Organização e cumprimento de rotas e pedidos:</strong> Planejamento
+                                    estratégico de trajetos e foco absoluto no cumprimento pontual dos prazos.</span>
+                            </li>
+                        </ul>
+
+                        <div class="exp-badges">
+                            <span class="exp-tag">CNH Categoria A</span>
+                            <span class="exp-tag">Condução de Motocicleta</span>
+                            <span class="exp-tag">Cumprimento de Prazos</span>
+                            <span class="exp-tag">Atendimento ao Cliente</span>
+                            <span class="exp-tag">Organização de Rotas</span>
+                        </div>
+                    </article>
+
+                    <!-- Experiência 2: Folguista - Zen Cozinha Oriental -->
+                    <article class="exp-card">
+                        <div class="exp-card-header">
+                            <div class="exp-company-meta">
+                                <div class="exp-icon">🍣</div>
+                                <div>
+                                    <h3 class="exp-title">Folguista</h3>
+                                    <span class="exp-company">Zen Cozinha Oriental</span>
+                                </div>
+                            </div>
+                            <span class="exp-type-badge">Operacional &amp; Suporte</span>
+                        </div>
+
+                        <div class="exp-activities-title">Principais Responsabilidades &amp; Atividades:</div>
+                        <ul class="exp-activities-list">
+                            <li>
+                                <span class="exp-bullet">•</span>
+                                <span><strong>Atuação como folguista em diferentes funções da empresa:</strong> Alta
+                                    flexibilidade para cobrir diferentes postos e demandas operacionais com
+                                    prontidão.</span>
+                            </li>
+                            <li>
+                                <span class="exp-bullet">•</span>
+                                <span><strong>Atendimento e suporte às atividades operacionais:</strong> Apoio direto
+                                    aos processos internos para assegurar fluidez e qualidade no atendimento.</span>
+                            </li>
+                            <li>
+                                <span class="exp-bullet">•</span>
+                                <span><strong>Organização do ambiente e auxílio à equipe:</strong> Manutenção da ordem
+                                    do espaço de trabalho e colaboração constante com toda a equipe.</span>
+                            </li>
+                        </ul>
+
+                        <div class="exp-badges">
+                            <span class="exp-tag">Trabalho em Equipe</span>
+                            <span class="exp-tag">Suporte Operacional</span>
+                            <span class="exp-tag">Organização do Ambiente</span>
+                            <span class="exp-tag">Atendimento ao Público</span>
+                            <span class="exp-tag">Versatilidade</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= FORMAÇÃO ACADÊMICA ================= -->
+        <section class="section formacao" id="formacao">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">03. Educação &amp; Ensino</span>
+                    <h2 class="section-title">Formação Acadêmica</h2>
+                    <p class="section-desc">Construção de base sólida em engenharia, computação e tecnologia no Centro
+                        Universitário Geraldo Di Biase.</p>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="formacao-card">
+                    <div class="formacao-logo-box">
+                        <img src="logo_ugb.png" alt="Logo UGB FERP" class="formacao-ugb-logo">
+                        <span class="formacao-status-tag">Em andamento • 1º Semestre</span>
+                    </div>
+
+                    <div class="formacao-details">
+                        <h3>Bacharelado em Engenharia de Software</h3>
+                        <span class="formacao-institution">UGB / FERP — Centro Universitário Geraldo Di Biase</span>
+                        <p class="formacao-desc">
+                            Formação superior voltada para o desenvolvimento de soluções tecnológicas inovadoras, lógica
+                            de programação, algoritmos, modelagem de sistemas, metodologias ágeis e boas práticas de
+                            engenharia.
+                        </p>
+                        <div class="formacao-highlights">
+                            <span class="formacao-pill">1º Semestre em Andamento</span>
+                            <span class="formacao-pill">Engenharia de Software</span>
+                            <span class="formacao-pill">Lógica &amp; Computação</span>
+                            <span class="formacao-pill">UGB / FERP Volta Redonda</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= HABILIDADES & COMPETÊNCIAS ================= -->
+        <section class="section habilidades" id="habilidades">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">04. Aptidões &amp; Qualificações</span>
+                    <h2 class="section-title">Habilidades &amp; Competências</h2>
+                    <p class="section-desc">Conjunto de competências comportamentais e qualificações práticas aplicadas
+                        no dia a dia profissional.</p>
+                    <div class="section-line"></div>
+                </div>
+
+                <!-- Filtros de Habilidades -->
+                <div class="skills-filter-bar">
+                    <button type="button" class="filter-btn active" onclick="filterSkills(this, 'all')">Todas as
+                        Habilidades</button>
+                    <button type="button" class="filter-btn" onclick="filterSkills(this, 'soft')">Comportamentais (Soft
+                        Skills)</button>
+                    <button type="button" class="filter-btn" onclick="filterSkills(this, 'praticas')">Práticas &amp;
+                        Operacionais</button>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Habilidade 1: Facilidade para aprender -->
+                    <div class="skill-card" data-category="soft">
+                        <div class="skill-header">
+                            <div class="skill-icon">🧠</div>
+                            <div class="skill-header-meta">
+                                <h3>Facilidade para Aprender</h3>
+                                <span>Soft Skill • Adaptabilidade</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">Rápida absorção de novas rotinas, processos, ferramentas e tecnologias,
+                            com postura curiosa e autodidata.</p>
+                        <div class="skill-points">
+                            <div class="skill-point-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>Adaptação ágil a diferentes setores</span>
+                            </div>
+                            <div class="skill-point-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>Vontade constante de evolução</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Habilidade 2: Responsabilidade e pontualidade -->
+                    <div class="skill-card" data-category="soft">
+                        <div class="skill-header">
+                            <div class="skill-icon">⏱️</div>
+                            <div class="skill-header-meta">
+                                <h3>Responsabilidade &amp; Pontualidade</h3>
+                                <span>Soft Skill • Compromisso</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">Comprometimento rigoroso com horários, prazos de entrega e deveres
+                            assumidos com a equipe e clientes.</p>
+                        <div class="skill-points">
+                            <div class="skill-point-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>Cumprimento seguro de prazos</span>
+                            </div>
+                            <div class="skill-point-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>Confiabilidade e disciplina</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Habilidade 3: Boa comunicação -->
+                    <div class="skill-card" data-category="soft">
+                        <div class="skill-header">
+                            <div class="skill-icon">💬</div>
+                            <div class="skill-header-meta">
+                                <h3>Boa Comunicação</h3>
+                                <span>Soft Skill • Relações Humanas</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">Clareza, empatia e cordialidade no atendimento a clientes, contato com
+                            estabelecimentos e diálogo interno com colegas.</p>
+                        <div class="skill-points">
+                            <div class="skill-point-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>Atendimento com excelência</span>
+                            </div>
+                            <div class="skill-point-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>Escuta ativa e clareza na fala</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Habilidade 4: Organização -->
+                    <div class="skill-card" data-category="soft">
+                        <div class="skill-header">
+                            <div class="skill-icon">🗂️</div>
+                            <div class="skill-header-meta">
+                                <h3>Organização</h3>
+                                <span>Soft Skill • Gestão &amp; Ordem</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">Planejamento eficaz de rotas, controle de pedidos e zelo pelo ambiente de
+                            trabalho e materiais.</p>
+                        <div class="skill-points">
+                            <div class="skill-point-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>Otimização de trajetos e tarefas</span>
+                            </div>
+                            <div class="skill-point-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>Manutenção da ordem operacional</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Habilidade 5: Trabalho em equipe -->
+                    <div class="skill-card" data-category="soft">
+                        <div class="skill-header">
+                            <div class="skill-icon">🤝</div>
+                            <div class="skill-header-meta">
+                                <h3>Trabalho em Equipe</h3>
+                                <span>Soft Skill • Colaboração</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">Cooperação ativa, disposição para auxiliar parceiros de trabalho e busca
+                            conjunta por metas e resultados.</p>
+                        <div class="skill-points">
+                            <div class="skill-point-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>Espírito colaborativo e prestativo</span>
+                            </div>
+                            <div class="skill-point-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>Sinergia com diferentes perfis</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Habilidade 6: CNH Categoria A & Entregas -->
+                    <div class="skill-card" data-category="praticas">
+                        <div class="skill-header">
+                            <div class="skill-icon">🏍️</div>
+                            <div class="skill-header-meta">
+                                <h3>CNH Categoria A &amp; Entregas</h3>
+                                <span>Qualificação Prática • Condução</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">Habilitação legal para motocicletas e ampla experiência com pilotagem
+                            defensiva, logística e entregas ágeis.</p>
+                        <div class="skill-points">
+                            <div class="skill-point-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>Condução defensiva e segura</span>
+                            </div>
+                            <div class="skill-point-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>Experiência prática no trânsito urbano</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CONTATO ================= -->
+        <section class="section contato" id="contato">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">05. Fale Comigo</span>
+                    <h2 class="section-title">Entre em Contato</h2>
+                    <p class="section-desc">Estou disponível para oportunidades profissionais, entrevistas e novos
+                        desafios no mercado.</p>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="contato-grid">
+                    <!-- Informações de Contato -->
+                    <div class="contato-cards-container">
+                        <div class="contact-card">
+                            <div class="contact-card-top">
+                                <div class="tp-avatar-sm">TP</div>
+                                <div>
+                                    <h4>Thiago Pires</h4>
+                                    <span>Engenharia de Software • UGB/FERP</span>
+                                </div>
+                            </div>
+                            <div class="contact-items">
+                                <div class="contact-item">
+                                    <span class="c-icon">✉️</span>
+                                    <div>
+                                        <small>E-mail Direto</small>
+                                        <a href="mailto:thiagopires1605@gmail.com">thiagopires1605@gmail.com</a>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <span class="c-icon">💬</span>
+                                    <div>
+                                        <small>WhatsApp &amp; Telefone</small>
+                                        <p>
+                                            <a href="https://wa.me/5524993180240" target="_blank"
+                                                rel="noopener noreferrer"
+                                                style="color: var(--accent-emerald); font-weight: 700;">(24)
+                                                99318-0240</a>
+                                            <span
+                                                style="color: var(--text-muted); font-size: 0.85rem; margin-left: 0.4rem;">•
+                                                <a href="tel:+5524993180240"
+                                                    style="color: var(--ugb-royal);">Ligar</a></span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <span class="c-icon">💼</span>
+                                    <div>
+                                        <small>LinkedIn</small>
+                                        <a href="https://www.linkedin.com/in/thiago-pires-2039652a4/" target="_blank"
+                                            rel="noopener noreferrer">linkedin.com/in/thiago-pires</a>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <span class="c-icon">📍</span>
+                                    <div>
+                                        <small>Localização</small>
+                                        <p>Volta Redonda – RJ</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Formulário de Contato -->
+                    <div class="contato-form-container">
+                        <form class="contato-form" onsubmit="handleFormSubmit(event)">
+                            <div class="form-group">
+                                <label for="nome">Seu Nome / Empresa</label>
+                                <input type="text" id="nome" name="nome"
+                                    placeholder="Digite seu nome completo ou da sua empresa" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Seu E-mail de Contato</label>
+                                <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="assunto">Assunto</label>
+                                <input type="text" id="assunto" name="assunto"
+                                    placeholder="Ex: Oportunidade de Trabalho / Entrevista" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="mensagem">Mensagem</label>
+                                <textarea id="mensagem" name="mensagem" rows="4"
+                                    placeholder="Escreva sua mensagem ou proposta aqui..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">
+                                Enviar Mensagem
+                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <img src="logo_ugb.png" alt="Logo UGB FERP" class="footer-ugb-logo">
+                <div class="footer-text">
+                    <p>&copy; 2026 <strong>Thiago Pires</strong> — Todos os direitos reservados.</p>
+                    <p class="footer-sub">Bacharelado em Engenharia de Software • 1º Semestre • Centro Universitário
+                        Geraldo Di Biase (UGB / FERP)</p>
+                </div>
+            </div>
+            <div style="display: flex; gap: 1rem; align-items: center;">
+                <a href="https://wa.me/5524993180240" target="_blank" rel="noopener noreferrer"
+                    style="color: #25D366; font-weight: 700; font-size: 0.9rem;" title="WhatsApp">WhatsApp</a>
+                <span style="color: rgba(255,255,255,0.4)">•</span>
+                <a href="https://www.linkedin.com/in/thiago-pires" target="_blank" rel="noopener noreferrer"
+                    style="color: #38bdf8; font-weight: 700; font-size: 0.9rem;" title="LinkedIn">LinkedIn</a>
+                <span style="color: rgba(255,255,255,0.4)">•</span>
+                <a href="mailto:thiagopires1605@gmail.com" style="color: #ffffff; font-weight: 700; font-size: 0.9rem;"
+                    title="E-mail">E-mail</a>
+                <a href="#hero" class="back-to-top" title="Voltar ao Topo" aria-label="Voltar ao Topo"
+                    style="margin-left: 1rem;">↑</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts de Interatividade -->
+    <script>
+        // Terminal Tab Switcher
+        function switchTab(btn, tabId) {
+            document.querySelectorAll('.code-tab').forEach(tab => tab.classList.remove('active'));
+            document.querySelectorAll('.code-tab-content').forEach(content => content.classList.remove('active'));
+
+            const selectedContent = document.getElementById('tab-' + tabId);
+            if (selectedContent) {
+                selectedContent.classList.add('active');
+            }
+            if (btn) {
+                btn.classList.add('active');
+            }
+        }
+
+        // Skills Filter
+        function filterSkills(btn, category) {
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            if (btn) {
+                btn.classList.add('active');
+            }
+
+            const cards = document.querySelectorAll('.skill-card');
+            cards.forEach(card => {
+                const cardCat = card.getAttribute('data-category');
+                if (category === 'all' || cardCat === category) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Handle Contact Form Submission
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const nome = document.getElementById('nome').value;
+            const email = document.getElementById('email').value;
+            const assunto = document.getElementById('assunto').value;
+            const mensagem = document.getElementById('mensagem').value;
+
+            // Open mailto with filled parameters as fallback
+            const mailtoUrl = `mailto:thiagopires1605@gmail.com?subject=${encodeURIComponent(assunto + ' - Contato de ' + nome)}&body=${encodeURIComponent('Nome: ' + nome + '\nE-mail: ' + email + '\n\nMensagem:\n' + mensagem)}`;
+            window.location.href = mailtoUrl;
+
+            alert('Obrigado pelo contato, ' + nome + '! O seu cliente de e-mail foi acionado para envio direto a thiagopires1605@gmail.com.');
+            e.target.reset();
+        }
+    </script>
+
+</body>
+
+</html>

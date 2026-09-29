@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfólio Acadêmico e Técnico de Kauê Loreno Lopes - Engenharia de Software, Back-end, Docker & Iniciação Científica | 6º Período UGB">
+    <title>Kauê Loreno Lopes • Portfólio de Eng. Software, Back-end & DevOps</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Favicon com Logo UGB -->
+    <link rel="icon" type="image/png" href="logo_ugb.png">
+    <!-- Folha de Estilos Exclusiva em CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#hero" class="nav-logo">
+                <img src="logo_ugb.png" alt="Logo UGB FERP" class="nav-logo-img">
+                <span class="nav-logo-text"><span class="logo-bracket">&lt;</span>Kaue<span class="logo-accent">.Dev</span><span
+                        class="logo-bracket">/&gt;</span></span>
+            </a>
+
+            <!-- Toggle de Menu Mobile (CSS Puro com Checkbox) -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+            <label for="nav-toggle" class="nav-toggle-label" aria-label="Abrir Menu">
+                <span class="hamburger"></span>
+            </label>
+
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#sobre" class="nav-link">Sobre Mim</a></li>
+                    <li class="nav-item"><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                    <li class="nav-item"><a href="#projetos" class="nav-link">Projetos</a></li>
+                    <li class="nav-item"><a href="#destaques" class="nav-link">Prêmios &amp; Pesquisa</a></li>
+                    <li class="nav-item"><a href="#formacao" class="nav-link">Formação</a></li>
+                    <li class="nav-item"><a href="#contato" class="nav-link nav-link-btn">Contato</a></li>
+                    <li class="nav-item"><a href="../pedro/index.html" class="nav-link-switch" title="Ver portfólio de Pedro Henrique">👤 Pedro</a></li>
+                    <li class="nav-item"><a href="../joao/index.html" class="nav-link-switch" title="Ver portfólio de João Marcelo">👤 João Marcelo</a></li>
+                    <li class="nav-item"><a href="../index.html" class="nav-link-switch" title="Voltar ao portal central">🏛️ Central</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ================= HERO SECTION ================= -->
+        <section class="hero" id="hero">
+            <div class="hero-container container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <img src="logo_ugb.png" alt="Logo UGB" class="badge-logo-img">
+                        <span class="pulse-dot"></span> 6º Período • Engenharia de Software • UGB | IFRJ Automação
+                    </div>
+                    <h1 class="hero-title">
+                        Back-end, <span class="gradient-text">DevOps</span> &amp; Iniciação Científica
+                    </h1>
+                    <p class="hero-subtitle">
+                        Portfólio de <strong class="text-highlight">Kauê Loreno Lopes</strong>. Desenvolvedor Back-end especializado
+                        em <strong>Python, Django REST, SQL e Docker</strong>. Técnico em Automação Industrial pelo <strong>IFRJ</strong>,
+                        graduando do 6º período de <strong>Engenharia de Software no UGB</strong>, bolsista de Iniciação Científica da
+                        <strong>FAPERJ</strong>, monitor no programa federal <strong>PET-Saúde Digital (MS/MEC/SUS)</strong> e vencedor do
+                        <strong>1º Lugar Inova-San Nissan</strong>.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projetos" class="btn btn-primary">
+                            Ver Meus Projetos
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="7" y1="17" x2="17" y2="7"></line>
+                                <polyline points="7 7 17 7 17 17"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#destaques" class="btn btn-secondary">Prêmios &amp; Pesquisas</a>
+                        <a href="#contato" class="btn btn-outline">Fale Comigo</a>
+                    </div>
+
+                    <!-- Quick Dev Avatar & Info -->
+                    <div class="hero-individual-quick">
+                        <div class="duo-avatar kl-avatar">KL</div>
+                        <div class="duo-meta">
+                            <strong>Kauê Loreno Lopes</strong>
+                            <span>Back-end Developer • Pesquisador FAPERJ • UGB / IFRJ</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <!-- Interactive Terminal with Tabs -->
+                    <div class="code-card">
+                        <div class="code-card-header">
+                            <span class="dot dot-red"></span>
+                            <span class="dot dot-yellow"></span>
+                            <span class="dot dot-green"></span>
+                            <div class="code-tabs">
+                                <button type="button" class="code-tab active"
+                                    onclick="switchTab(this, 'perfil')">kaue_perfil.py</button>
+                                <button type="button" class="code-tab"
+                                    onclick="switchTab(this, 'docker')">docker-compose.yml</button>
+                                <button type="button" class="code-tab"
+                                    onclick="switchTab(this, 'pesquisa')">pesquisa_asteroide.py</button>
+                            </div>
+                        </div>
+
+                        <!-- Tab 1: Perfil Kaue -->
+                        <div id="tab-perfil" class="code-tab-content active">
+                            <pre class="code-body"><code><span class="token-comment"># Perfil Acadêmico & Técnico: Kauê Loreno Lopes</span>
+<span class="token-keyword">class</span> <span class="token-class">SoftwareEngineer</span>:
+    name = <span class="token-string">"Kauê Loreno Lopes"</span>
+    institution = <span class="token-string">"UGB (6º Período) & IFRJ (Técnico Automação)"</span>
+    focus = [<span class="token-string">"Python / Django REST"</span>, <span class="token-string">"Docker & Microsserviços"</span>, <span class="token-string">"SQL / PostgreSQL"</span>]
+    awards = [
+        <span class="token-string">"1º Lugar Inova-San Nissan (Mobilidade & Cidades Inteligentes)"</span>,
+        <span class="token-string">"3º Lugar Hackathon UGB (U-Commerce)"</span>,
+        <span class="token-string">"1º Lugar Jornada JT IFRJ (Bolsista FAPERJ)"</span>
+    ]
+    research = [
+        <span class="token-string">"Dinâmica de Asteroides (CONIC / JORNIC / Vírgula Hub)"</span>,
+        <span class="token-string">"Monitoria PET-Saúde Digital (MS / MEC / SUS)"</span>
+    ]
+    english_level = <span class="token-string">"Fluente (Escrita, Leitura e Conversação)"</span></code></pre>
+                        </div>
+
+                        <!-- Tab 2: Docker Compose -->
+                        <div id="tab-docker" class="code-tab-content">
+                            <pre class="code-body"><code><span class="token-comment"># Conteinerização & Microsserviços - Kauê Loreno</span>
+<span class="token-key">version</span>: <span class="token-string">"3.8"</span>
+<span class="token-key">services</span>:
+  <span class="token-key">api_backend</span>:
+    <span class="token-key">build</span>: <span class="token-string">"."</span>
+    <span class="token-key">command</span>: <span class="token-string">"gunicorn config.wsgi:application --bind 0.0.0.0:8000"</span>
+    <span class="token-key">ports</span>:
+      - <span class="token-string">"8000:8000"</span>
+    <span class="token-key">environment</span>:
+      - <span class="token-string">DJANGO_SETTINGS_MODULE=config.production</span>
+      - <span class="token-string">DB_ENGINE=django.db.backends.postgresql</span>
+    <span class="token-key">depends_on</span>:
+      - <span class="token-string">postgres_db</span>
+  <span class="token-key">postgres_db</span>:
+    <span class="token-key">image</span>: <span class="token-string">"postgres:15-alpine"</span>
+    <span class="token-key">environment</span>:
+      <span class="token-key">POSTGRES_DB</span>: <span class="token-string">"kaue_devops"</span></code></pre>
+                        </div>
+
+                        <!-- Tab 3: Pesquisa Asteroide -->
+                        <div id="tab-pesquisa" class="code-tab-content">
+                            <pre class="code-body"><code><span class="token-comment"># PIC: Dinâmica Orbital do Asteroide 2024 YR4</span>
+<span class="token-comment"># Selecionado para o 25º Congresso Nacional (CONIC)</span>
+<span class="token-keyword">import</span> numpy <span class="token-keyword">as</span> np
+
+<span class="token-keyword">def</span> <span class="token-function">model_orbital_trajectory</span>(semi_major_axis, eccentricity):
+    perihelion = semi_major_axis * (<span class="token-number">1.0</span> - eccentricity)
+    aphelion = semi_major_axis * (<span class="token-number">1.0</span> + eccentricity)
+    <span class="token-keyword">return</span> {
+        <span class="token-string">"congresso"</span>: <span class="token-string">"25º CONIC & JORNIC 2025"</span>,
+        <span class="token-string">"evento"</span>: <span class="token-string">"Vírgula Hub de Inovação VR"</span>,
+        <span class="token-string">"status"</span>: <span class="token-string">"Pesquisa em Astronomia Computacional Aprovada"</span>
+    }</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SOBRE MIM ================= -->
+        <section class="section sobre" id="sobre">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">01. Perfil Profissional</span>
+                    <h2 class="section-title">Sobre Mim</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <!-- Resumo & Base Científica -->
+                <div class="duo-synergy-banner">
+                    <div class="synergy-logo-box">
+                        <img src="logo_ugb.png" alt="Logo UGB FERP" class="synergy-ugb-logo">
+                    </div>
+                    <div class="synergy-text">
+                        <h3>Excelência Técnica: Do IFRJ à Iniciação Científica e DevOps</h3>
+                        <p>
+                            Formado como <strong>Técnico em Automação Industrial pelo IFRJ</strong> e atualmente cursando o
+                            <strong>6º período de Engenharia de Software no UGB (conclusão em 12/2027)</strong>, tenho uma trajetória marcada
+                            pela dedicação à ciência e ao desenvolvimento back-end de alta performance. Como bolsista de Iniciação Científica da
+                            <strong>FAPERJ</strong>, desenvolvi softwares educacionais premiados, atuo em pesquisas de astronomia computacional
+                            selecionadas para o <strong>25º CONIC</strong> e exerço monitoria no programa federal <strong>PET-Saúde Digital (MS/MEC)</strong>.
+                            Combino rigor analítico com proficiência em <strong>Python, Django REST, PostgreSQL, Docker e esteiras DevOps</strong>.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card de Perfil Detalhado -->
+                <div class="individual-profile-showcase">
+                    <div class="student-profile-card">
+                        <div class="student-card-header">
+                            <div class="student-avatar-badge kl-gradient">KL</div>
+                            <div>
+                                <h3 class="student-name">Kauê Loreno Lopes</h3>
+                                <span class="student-role">Back-end Developer • Pesquisador Científico • Automação IFRJ • Graduando UGB</span>
+                            </div>
+                        </div>
+                        <div class="student-body">
+                            <p class="student-bio">
+                                Estudante de Engenharia de Software no Centro Universitário Geraldo Di Biase (UGB) com previsão de graduação para
+                                dezembro de 2027. Possui histórico sólido em <strong>Iniciação Científica financiada pela FAPERJ</strong>, monitoria
+                                no <strong>PET-Saúde Digital (Ministério da Saúde / MEC)</strong> no Eixo de Tecnologia Digital e conquistas em hackathons
+                                de grande porte, incluindo o 1º Lugar Geral no <strong>Nissan Inova-San</strong> (4ª edição) competindo contra 51 projetos
+                                de 24 universidades. Foco contínuo em arquiteturas de microsserviços escaláveis, dockerização de APIs RESTful,
+                                modelagem relacional avançada e orquestração de deploys contínuos. Possui nível de <strong>Inglês Fluente</strong>.
+                            </p>
+                            <div class="student-tags">
+                                <span class="student-tag">Volta Redonda – RJ</span>
+                                <span class="student-tag">IFRJ Automação Industrial</span>
+                                <span class="student-tag">Bolsista FAPERJ</span>
+                                <span class="student-tag">Inglês Fluente</span>
+                                <span class="student-tag">1º Lugar Nissan Inova-San</span>
+                                <span class="student-tag">Monitor PET-Saúde Digital</span>
+                                <span class="student-tag">Pesquisador CONIC/JORNIC</span>
+                            </div>
+                            <div class="student-social-links">
+                                <a href="https://linkedin.com/in/kaueloreno" target="_blank" rel="noopener noreferrer"
+                                    class="student-social-btn" title="LinkedIn de Kauê Loreno">
+                                    LinkedIn
+                                </a>
+                                <a href="https://github.com/ArchKeyor" target="_blank" rel="noopener noreferrer"
+                                    class="student-social-btn" title="GitHub de Kauê Loreno">
+                                    GitHub
+                                </a>
+                                <a href="mailto:lorenokaue3p@gmail.com" class="student-social-btn"
+                                    title="E-mail de Kauê Loreno">
+                                    lorenokaue3p@gmail.com
+                                </a>
+                            </div>
+                            <div class="student-quote">
+                                <em>"Focado em crescer tecnicamente, aplicar arquitetura de microsserviços, conteinerização com Docker e resolver
+                                    problemas de impacto real através da tecnologia, pesquisa científica e inovação social."</em>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Métricas de Destaque -->
+                <div class="sobre-highlights">
+                    <div class="highlight-item">
+                        <span class="highlight-num">3+</span>
+                        <span class="highlight-label">Prêmios &amp; Hackathons Regionais</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-num">2</span>
+                        <span class="highlight-label">Linhas de Iniciação Científica (FAPERJ/CONIC)</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-num">100%</span>
+                        <span class="highlight-label">Fluência em Inglês &amp; Back-end</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-num">6º</span>
+                        <span class="highlight-label">Período em Engenharia de Software</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= HABILIDADES & TECNOLOGIAS ================= -->
+        <section class="section habilidades" id="habilidades">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">02. Arsenal Técnico</span>
+                    <h2 class="section-title">Habilidades &amp; Competências</h2>
+                    <p class="section-desc">Mapeamento estruturado das hard skills em desenvolvimento back-end, Docker, banco de dados e pesquisa científica.</p>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Categoria 1: Back-end & Linguagens -->
+                    <div class="skill-category">
+                        <div class="skill-cat-header">
+                            <div class="cat-icon">🐍</div>
+                            <div>
+                                <h3>Back-end &amp; Programação</h3>
+                                <span class="cat-sub">Lógica, Frameworks &amp; Arquitetura</span>
+                            </div>
+                        </div>
+                        <div class="skill-badges">
+                            <span class="badge">Python Avançado</span>
+                            <span class="badge">Django Framework</span>
+                            <span class="badge">Django REST Framework (DRF)</span>
+                            <span class="badge">SQL / PostgreSQL</span>
+                            <span class="badge">Arquitetura de Microsserviços</span>
+                            <span class="badge">RESTful APIs &amp; Swagger</span>
+                            <span class="badge">Autenticação JWT &amp; Segurança</span>
+                            <span class="badge">Modelagem Relacional de Dados</span>
+                        </div>
+                    </div>
+
+                    <!-- Categoria 2: DevOps, Docker & Infraestrutura -->
+                    <div class="skill-category">
+                        <div class="skill-cat-header">
+                            <div class="cat-icon">🐳</div>
+                            <div>
+                                <h3>DevOps, Docker &amp; Infra</h3>
+                                <span class="cat-sub">Conteinerização &amp; Esteiras</span>
+                            </div>
+                        </div>
+                        <div class="skill-badges">
+                            <span class="badge">Docker &amp; Dockerfile</span>
+                            <span class="badge">Docker Compose</span>
+                            <span class="badge">Dockerização de APIs REST</span>
+                            <span class="badge">Git &amp; GitHub Avançado</span>
+                            <span class="badge">CI/CD Pipelines (GitHub Actions)</span>
+                            <span class="badge">Linux &amp; Shell Scripting</span>
+                            <span class="badge">Testes Automatizados (pytest)</span>
+                        </div>
+                    </div>
+
+                    <!-- Categoria 3: Pesquisa & Computação Científica -->
+                    <div class="skill-category">
+                        <div class="skill-cat-header">
+                            <div class="cat-icon">🔬</div>
+                            <div>
+                                <h3>Pesquisa &amp; Ciência</h3>
+                                <span class="cat-sub">Iniciação Científica &amp; Saúde Digital</span>
+                            </div>
+                        </div>
+                        <div class="skill-badges">
+                            <span class="badge">Bolsista FAPERJ</span>
+                            <span class="badge">PIC Dinâmica de Asteroides</span>
+                            <span class="badge">CONIC &amp; JORNIC</span>
+                            <span class="badge">PET-Saúde Digital SUS</span>
+                            <span class="badge">Modelagem Matemática</span>
+                            <span class="badge">Comunicação Científica</span>
+                        </div>
+                    </div>
+
+                    <!-- Categoria 4: Apresentação & Pitch -->
+                    <div class="skill-category">
+                        <div class="skill-cat-header">
+                            <div class="cat-icon">🎯</div>
+                            <div>
+                                <h3>Pitch &amp; Hackathons</h3>
+                                <span class="cat-sub">Oratória Executiva &amp; Soluções</span>
+                            </div>
+                        </div>
+                        <div class="skill-badges">
+                            <span class="badge">Pitch Executivo Premiado</span>
+                            <span class="badge">Apresentação perante Bancas</span>
+                            <span class="badge">Metodologias Ágeis (Scrum)</span>
+                            <span class="badge">Ideação de Negócios &amp; Cidades Inteligentes</span>
+                            <span class="badge">Desenvolvimento Ágil sob Pressão</span>
+                        </div>
+                    </div>
+
+                    <!-- Categoria 5: Idiomas -->
+                    <div class="skill-category">
+                        <div class="skill-cat-header">
+                            <div class="cat-icon">🌍</div>
+                            <div>
+                                <h3>Idiomas</h3>
+                                <span class="cat-sub">Comunicação Global</span>
+                            </div>
+                        </div>
+                        <div class="skill-badges">
+                            <span class="badge">Inglês Fluente (Escrita, Leitura e Conversação)</span>
+                            <span class="badge">Português (Nativo)</span>
+                        </div>
+                    </div>
+
+                    <!-- Categoria 6: Automação & Sistemas -->
+                    <div class="skill-category">
+                        <div class="skill-cat-header">
+                            <div class="cat-icon">⚙️</div>
+                            <div>
+                                <h3>Automação &amp; Controle</h3>
+                                <span class="cat-sub">Formação Técnica IFRJ</span>
+                            </div>
+                        </div>
+                        <div class="skill-badges">
+                            <span class="badge">Lógica de Automação Industrial</span>
+                            <span class="badge">Sistemas Automatizados</span>
+                            <span class="badge">Controladores Lógicos</span>
+                            <span class="badge">Análise Estruturada de Sistemas</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soft Skills Section -->
+                <div class="soft-skills-container">
+                    <h3 class="soft-skills-title">
+                        <span class="soft-icon">🧠</span> Competências Comportamentais (Soft Skills)
+                    </h3>
+                    <div class="soft-skills-grid">
+                        <div class="soft-card">
+                            <span class="soft-name">Pensamento Crítico &amp; Lógica Analítica</span>
+                            <p>Capacidade de decompor problemas complexos, projetar modelos matemáticos e estruturar bancos relacionais com precisão.</p>
+                        </div>
+                        <div class="soft-card">
+                            <span class="soft-name">Pitch &amp; Oratória Executiva</span>
+                            <p>Articulação de alto nível para defender ideias técnicas em bancas avaliadoras, congressos acadêmicos e hackathons.</p>
+                        </div>
+                        <div class="soft-card">
+                            <span class="soft-name">Liderança &amp; Organização de Equipes</span>
+                            <p>Experiência ativa capitaneando grupos de estudantes em hackathons competitivos e projetos de pesquisa governamentais.</p>
+                        </div>
+                        <div class="soft-card">
+                            <span class="soft-name">Autodidatismo &amp; Rigor Científico</span>
+                            <p>Firmeza na adoção de métodos científicos rigorosos, leitura assídua de documentação técnica em inglês e aprendizado contínuo.</p>
+                        </div>
+                        <div class="soft-card">
+                            <span class="soft-name">Inovação Social &amp; Empatia</span>
+                            <p>Sensibilidade para idealizar tecnologias que impactem positivamente a sociedade, acessibilidade de PCDs e saúde pública.</p>
+                        </div>
+                        <div class="soft-card">
+                            <span class="soft-name">Resiliência &amp; Ética Profissional</span>
+                            <p>Compromisso inabalável com prazos, integridade acadêmica e entrega de sistemas resilientes e seguros.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PROJETOS ACADÊMICOS & PRÁTICOS ================= -->
+        <section class="section projetos" id="projetos">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">03. Portfólio de Projetos</span>
+                    <h2 class="section-title">Projetos &amp; Realizações Técnicas</h2>
+                    <p class="section-desc">Aplicações reais premiadas, desenvolvimento em Python/Django, Docker e soluções inovadoras.</p>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="projetos-grid">
+                    <!-- Projeto 1: Caminho Livre (Nissan Inova-San) -->
+                    <article class="project-card featured-project">
+                        <div class="project-badge-award award-gold">🥇 1º Lugar Regional Nissan Inova-San (4ª Edição)</div>
+                        <div class="project-header">
+                            <div class="project-folder-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <span class="project-author-badge kl-tag">Kauê Loreno</span>
+                        </div>
+                        <h3 class="project-title">Caminho Livre — Navegação Assistiva para PCD Visual</h3>
+                        <p class="project-description">
+                            Idealização e apresentação de aplicativo inovador voltado à orientação e mobilidade de pessoas com deficiência
+                            visual em ambientes internos. A proposta oferece mapeamento digital interativo do estabelecimento e navegação
+                            espacial em tempo real. O projeto alcançou o <strong>1º lugar entre 51 propostas de 24 instituições de ensino superior</strong>
+                            de toda a região do Sul Fluminense no prestigiado programa Inova-San da montadora Nissan.
+                        </p>
+                        <div class="project-techs">
+                            <span>Acessibilidade Digital</span>
+                            <span>Cidades Inteligentes</span>
+                            <span>Ideação &amp; Pitch</span>
+                            <span>Mobilidade Urbana</span>
+                            <span>Nissan Inova-San</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="project-status-tag">✨ Projeto Campeão Regional</span>
+                        </div>
+                    </article>
+
+                    <!-- Projeto 2: U-Commerce (Hackathon UGB) -->
+                    <article class="project-card featured-project">
+                        <div class="project-badge-award">🏆 3º Lugar Hackathon UGB (Maio/2026)</div>
+                        <div class="project-header">
+                            <div class="project-folder-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <span class="project-author-badge kl-tag">Kauê Loreno</span>
+                        </div>
+                        <h3 class="project-title">U-Commerce — Plataforma Acadêmica de Troca e Materiais</h3>
+                        <p class="project-description">
+                            Plataforma concebida para conectar estudantes universitários: intermediação de compra e venda de materiais
+                            acadêmicos, mentorias entre veteranos e calouros e apoio mútuo em disciplinas. Kauê atuou na
+                            <strong>dockerização completa da aplicação</strong>, organização tática do time, desenvolvimento do back-end com
+                            <strong>Django REST Framework</strong> e apresentação oral do <strong>pitch final</strong> premiado perante a banca.
+                        </p>
+                        <div class="project-techs">
+                            <span>Python</span>
+                            <span>Django REST</span>
+                            <span>Docker</span>
+                            <span>SQL</span>
+                            <span>Git/GitHub</span>
+                            <span>Pitch</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ArchKeyor" target="_blank" rel="noopener noreferrer"
+                                class="project-btn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                                </svg>
+                                Repositório GitHub
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Projeto 3: Geometria com Euclides (IFRJ - FAPERJ) -->
+                    <article class="project-card">
+                        <div class="project-badge-award">🥇 1º Lugar Ciências Exatas (Jornada JT - IFRJ)</div>
+                        <div class="project-header">
+                            <div class="project-folder-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <span class="project-author-badge kl-tag">Kauê Loreno</span>
+                        </div>
+                        <h3 class="project-title">Software Educacional "Aprendendo Geometria com Euclides"</h3>
+                        <p class="project-description">
+                            Projeto de Iniciação Científica desenvolvido como bolsista da Fundação Carlos Chagas Filho de Amparo à Pesquisa (FAPERJ)
+                            no IFRJ. Consiste no desenvolvimento de software interativo para suporte pedagógico ao ensino de geometria euclidiana,
+                            construções geométricas e raciocínio lógico-matemático.
+                        </p>
+                        <div class="project-techs">
+                            <span>Bolsa FAPERJ</span>
+                            <span>IFRJ</span>
+                            <span>Software Educacional</span>
+                            <span>Lógica Matemática</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="project-status-tag">🔬 Iniciação Científica Premiada</span>
+                        </div>
+                    </article>
+
+                    <!-- Projeto 4: PIC Dinâmica do Asteroide 2024 YR4 -->
+                    <article class="project-card">
+                        <div class="project-header">
+                            <div class="project-folder-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <span class="project-author-badge kl-tag">Kauê Loreno</span>
+                        </div>
+                        <h3 class="project-title">PIC: Dinâmica Orbital do Asteroide 2024 YR4</h3>
+                        <p class="project-description">
+                            Pesquisa científica com apresentações comprovadas na 4ª Mostra de Trabalhos Acadêmicos do Vírgula Hub de Inovação VR,
+                            apresentado na XX Jornada de Iniciação Científica (JORNIC - nov/2025) e selecionado para o <strong>25º Congresso Nacional
+                            de Iniciação Científica (CONIC)</strong>.
+                        </p>
+                        <div class="project-techs">
+                            <span>Astronomia Computacional</span>
+                            <span>Python Científico</span>
+                            <span>Modelagem Numérica</span>
+                            <span>CONIC / JORNIC</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="project-status-tag">🪐 Pesquisa Aprovada CONIC</span>
+                        </div>
+                    </article>
+
+                    <!-- Projeto 5: Pipeline Automatizado DevOps CI/CD -->
+                    <article class="project-card">
+                        <div class="project-header">
+                            <div class="project-folder-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <span class="project-author-badge kl-tag">DevOps UGB</span>
+                        </div>
+                        <h3 class="project-title">Pipeline Automatizado de CI/CD &amp; Docker</h3>
+                        <p class="project-description">
+                            Implementação de esteira automatizada com GitHub Actions para validação estática de código, execução de testes unitários,
+                            compilação de imagem Docker conteinerizada com Python e orquestração de deploy contínuo em ambiente de homologação.
+                        </p>
+                        <div class="project-techs">
+                            <span>GitHub Actions</span>
+                            <span>Docker</span>
+                            <span>YAML</span>
+                            <span>Linux Shell</span>
+                            <span>Testes Unitários</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ArchKeyor" target="_blank" rel="noopener noreferrer"
+                                class="project-btn">
+                                GitHub
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Projeto 6: Sistema de Gestão & Arquitetura Relacional -->
+                    <article class="project-card">
+                        <div class="project-header">
+                            <div class="project-folder-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <span class="project-author-badge kl-tag">Eng. Software UGB</span>
+                        </div>
+                        <h3 class="project-title">Sistema de Gestão &amp; Arquitetura Relacional</h3>
+                        <p class="project-description">
+                            Projeto integrador semestral com levantamento de requisitos de software (Casos de Uso, Histórias de Usuário),
+                            modelagem relacional de banco de dados (DER/PostgreSQL), especificação de endpoints RESTful e governança ágil com Scrum.
+                        </p>
+                        <div class="project-techs">
+                            <span>PostgreSQL</span>
+                            <span>Modelagem DER</span>
+                            <span>UML</span>
+                            <span>Eng. Requisitos</span>
+                            <span>Scrum</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="project-status-tag">📐 Prática de Engenharia</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PRÊMIOS, PESQUISA & DESTAQUES ================= -->
+        <section class="section destaques" id="destaques">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">04. Reconhecimento &amp; Ciência</span>
+                    <h2 class="section-title">Prêmios, Iniciação Científica &amp; Extensão</h2>
+                    <p class="section-desc">Histórico comprovado de premiações em inovação, aprovação em congressos nacionais e monitoria governamental.</p>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="destaques-grid">
+                    <!-- Destaque 1: Inova-San Nissan -->
+                    <div class="destaque-card highlight-glow">
+                        <div class="destaque-trophy">🥇</div>
+                        <div class="destaque-content">
+                            <span class="destaque-tag">1º Lugar Regional • Nissan Inova-San</span>
+                            <h3 class="destaque-title">Mobilidade Urbana &amp; Cidades Inteligentes</h3>
+                            <p class="destaque-desc">
+                                4ª edição do programa Inova-San promovido pela montadora Nissan. O projeto
+                                <strong>Caminho Livre</strong> alcançou o 1º lugar concorrendo com <strong>51 projetos
+                                    de 24 instituições de ensino superior</strong> de todo o Sul Fluminense.
+                            </p>
+                            <span class="destaque-author">Idealização &amp; Pitch: <strong>Kauê Loreno</strong></span>
+                        </div>
+                    </div>
+
+                    <!-- Destaque 2: Hackathon UGB -->
+                    <div class="destaque-card">
+                        <div class="destaque-trophy">🥉</div>
+                        <div class="destaque-content">
+                            <span class="destaque-tag">3º Lugar • Hackathon Universitário</span>
+                            <h3 class="destaque-title">Hackathon UGB (Maio/2026)</h3>
+                            <p class="destaque-desc">
+                                Premiação no Hackathon da instituição com o projeto <strong>U-Commerce</strong>,
+                                destacando-se na agilidade de desenvolvimento back-end com Django REST, dockerização rápida e
+                                apresentação executiva perante a banca avaliadora.
+                            </p>
+                            <span class="destaque-author">Docker &amp; Back-end: <strong>Kauê Loreno</strong></span>
+                        </div>
+                    </div>
+
+                    <!-- Destaque 3: XIX Jornada JT IFRJ -->
+                    <div class="destaque-card">
+                        <div class="destaque-trophy">🏆</div>
+                        <div class="destaque-content">
+                            <span class="destaque-tag">1º Lugar Ciências Exatas • IFRJ</span>
+                            <h3 class="destaque-title">XIX Jornada Jovens Talentos (IFRJ)</h3>
+                            <p class="destaque-desc">
+                                Projeto "Aprendendo Geometria com Euclides", desenvolvido como bolsista da
+                                <strong>FAPERJ</strong> (Fundação Carlos Chagas Filho de Amparo à Pesquisa do Estado do RJ).
+                            </p>
+                            <span class="destaque-author">Bolsista FAPERJ: <strong>Kauê Loreno</strong></span>
+                        </div>
+                    </div>
+
+                    <!-- Destaque 4: PIC Dinâmica do Asteroide 2024 YR4 -->
+                    <div class="destaque-card">
+                        <div class="destaque-trophy">🪐</div>
+                        <div class="destaque-content">
+                            <span class="destaque-tag">Iniciação Científica • Astronomia &amp; Computação</span>
+                            <h3 class="destaque-title">PIC: Dinâmica do Asteroide 2024 YR4</h3>
+                            <p class="destaque-desc">
+                                Trabalho científico de alta relevância com apresentações e seleções comprovadas:
+                            </p>
+                            <ul class="destaque-sublist">
+                                <li>4ª Mostra de Trabalhos Acadêmicos — Vírgula Hub de Inovação VR</li>
+                                <li>XX Jornada de Iniciação Científica (JORNIC) — nov/2025</li>
+                                <li>Selecionado para o <strong>25º Congresso Nacional de Iniciação Científica (CONIC)</strong></li>
+                            </ul>
+                            <span class="destaque-author">Pesquisador: <strong>Kauê Loreno</strong></span>
+                        </div>
+                    </div>
+
+                    <!-- Destaque 5: PET-Saúde Digital -->
+                    <div class="destaque-card">
+                        <div class="destaque-trophy">🏥</div>
+                        <div class="destaque-content">
+                            <span class="destaque-tag">Programa Federal • SUS / MS / MEC</span>
+                            <h3 class="destaque-title">PET-Saúde — Informação &amp; Saúde Digital</h3>
+                            <p class="destaque-desc">
+                                Monitor no programa federal que integra instituições de ensino superior e a rede de
+                                saúde pública municipal (Prefeitura de Piraí). Atuação no <strong>GT 4 – Eixo de
+                                    Tecnologia Digital</strong> no projeto TCI Online e participação no <strong>17º
+                                    Congresso Internacional da Rede Unida</strong>.
+                            </p>
+                            <span class="destaque-author">Monitor: <strong>Kauê Loreno</strong></span>
+                        </div>
+                    </div>
+
+                    <!-- Destaque 6: Formação IFRJ Automação -->
+                    <div class="destaque-card">
+                        <div class="destaque-trophy">⚡</div>
+                        <div class="destaque-content">
+                            <span class="destaque-tag">Excelência Técnica Federal</span>
+                            <h3 class="destaque-title">Instituto Federal do Rio de Janeiro (IFRJ)</h3>
+                            <p class="destaque-desc">
+                                Conclusão do curso técnico de excelência em Automação Industrial, fornecendo base rígida em eletrônica,
+                                programação de controladores, análise de circuitos e metodologias de engenharia aplicada.
+                            </p>
+                            <span class="destaque-author">Técnico em Automação: <strong>Kauê Loreno</strong></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= FORMAÇÃO ACADÊMICA & TRAJETÓRIA ================= -->
+        <section class="section formacao" id="formacao">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">05. Linha do Tempo</span>
+                    <h2 class="section-title">Formação Acadêmica &amp; Atuação</h2>
+                    <p class="section-desc">Evolução educacional, bolsas científicas e programas governamentais.</p>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="single-timeline-container">
+                    <div class="single-timeline-card">
+                        <div class="timeline-col-header kl-border">
+                            <span class="duo-avatar kl-avatar">KL</span>
+                            <div>
+                                <h3 style="font-size: 1.35rem; font-weight: 800; color: var(--ugb-navy);">Kauê Loreno Lopes</h3>
+                                <span style="font-size: 0.9rem; color: var(--ugb-royal); font-weight: 600;">Histórico Acadêmico &amp; Científico</span>
+                            </div>
+                        </div>
+
+                        <div class="timeline">
+                            <!-- Item 1: Graduação UGB -->
+                            <div class="timeline-item">
+                                <div class="timeline-dot kl-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">Previsão de Término: 12/2027</span>
+                                    <h4 class="timeline-title">Bacharelado em Engenharia de Software</h4>
+                                    <h5 class="timeline-institution">Centro Universitário Geraldo Di Biase (UGB)</h5>
+                                    <p class="timeline-desc">
+                                        6º Período. Ênfase em desenvolvimento back-end com Python/Django, microsserviços,
+                                        conteinerização com Docker, modelagem relacional avançada e práticas DevOps.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Item 2: IFRJ Automação -->
+                            <div class="timeline-item">
+                                <div class="timeline-dot kl-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">Concluído</span>
+                                    <h4 class="timeline-title">Técnico em Automação Industrial</h4>
+                                    <h5 class="timeline-institution">Instituto Federal do Rio de Janeiro (IFRJ)</h5>
+                                    <p class="timeline-desc">
+                                        Formação técnica de excelência em sistemas automatizados, programação de controladores lógicos,
+                                        modelagem de processos e controle eletroeletrônico.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Item 3: PET-Saúde Digital -->
+                            <div class="timeline-item">
+                                <div class="timeline-dot kl-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">Atuação Vigente</span>
+                                    <h4 class="timeline-title">PET-Saúde — Informação e Saúde Digital</h4>
+                                    <h5 class="timeline-institution">Ministérios da Saúde e Educação • Prefeitura de Piraí</h5>
+                                    <p class="timeline-desc">
+                                        Monitor atuante no Eixo de Tecnologia Digital (GT 4) no projeto Terapia Comunitária Integrativa Online
+                                        e eventos científicos internacionais (Rede Unida).
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Item 4: Bolsista FAPERJ -->
+                            <div class="timeline-item">
+                                <div class="timeline-dot kl-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">Bolsista de Iniciação Científica</span>
+                                    <h4 class="timeline-title">Bolsista FAPERJ — Jovens Talentos para a Ciência</h4>
+                                    <h5 class="timeline-institution">IFRJ / FAPERJ</h5>
+                                    <p class="timeline-desc">
+                                        Iniciação científica no desenvolvimento do software 'Aprendendo Geometria com Euclides', premiado com o
+                                        1º lugar em Ciências Exatas na Jornada Jovens Talentos.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CONTATO ================= -->
+        <section class="section contato" id="contato">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">06. Conexão Profissional</span>
+                    <h2 class="section-title">Entre em Contato</h2>
+                    <p class="section-desc">Aberto a projetos de engenharia back-end, oportunidades de estágio, colaborações em pesquisa e parcerias inovadoras.</p>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="contato-grid">
+                    <!-- Card de Contato de Kaue -->
+                    <div class="contato-cards-container">
+                        <div class="contact-card">
+                            <div class="contact-card-top">
+                                <div class="duo-avatar kl-avatar">KL</div>
+                                <div>
+                                    <h4>Kauê Loreno Lopes</h4>
+                                    <span>Back-end &amp; Pesquisador</span>
+                                </div>
+                            </div>
+                            <div class="contact-items">
+                                <div class="contact-item">
+                                    <span class="c-icon">📍</span>
+                                    <div>
+                                        <small>Localização</small>
+                                        <p>Volta Redonda – RJ</p>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <span class="c-icon">✉️</span>
+                                    <div>
+                                        <small>E-mail</small>
+                                        <a href="mailto:lorenokaue3p@gmail.com">lorenokaue3p@gmail.com</a>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <span class="c-icon">📞</span>
+                                    <div>
+                                        <small>Telefone / WhatsApp</small>
+                                        <a href="tel:+5524998237305">(24) 99823-7305</a>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <span class="c-icon">🔬</span>
+                                    <div>
+                                        <small>Área de Pesquisa</small>
+                                        <p>FAPERJ, PET-Saúde Digital &amp; CONIC</p>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <span class="c-icon">🔗</span>
+                                    <div>
+                                        <small>Redes Técnicas</small>
+                                        <div class="contact-links-inline">
+                                            <a href="https://linkedin.com/in/kaueloreno" target="_blank"
+                                                rel="noopener noreferrer">LinkedIn</a> •
+                                            <a href="https://github.com/ArchKeyor" target="_blank"
+                                                rel="noopener noreferrer">GitHub</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card de Navegação Rápida -->
+                        <div class="contact-card" style="background: var(--ugb-ice-light); border-color: var(--ugb-royal);">
+                            <div class="contact-card-top">
+                                <span style="font-size: 1.8rem;">🏛️</span>
+                                <div>
+                                    <h4 style="color: var(--ugb-navy);">Navegação do Projeto</h4>
+                                    <span>Portfólios da Disciplina de DevOps</span>
+                                </div>
+                            </div>
+                            <p style="font-size: 0.92rem; color: var(--text-secondary); margin-bottom: 1.2rem;">
+                                Você também pode acessar o portfólio individual de <strong>Pedro Henrique</strong> ou retornar à Central de Portfólios do 6º Período UGB:
+                            </p>
+                            <div style="display: flex; flex-direction: column; gap: 0.6rem;">
+                                <a href="../pedro/index.html" class="portal-btn-secondary" style="background: #ffffff;">
+                                    👤 Acessar Portfólio de Pedro Henrique
+                                </a>
+                                <a href="../joao/index.html" class="portal-btn-secondary" style="background: #ffffff;">
+                                    👤 Acessar Portfólio de João Marcelo
+                                </a>
+                                <a href="../index.html" class="portal-btn-secondary" style="background: #ffffff;">
+                                    🏛️ Retornar à Central de Portfólios
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Formulário de Contato -->
+                    <div class="contato-form-container">
+                        <form class="contato-form" action="mailto:lorenokaue3p@gmail.com" method="POST"
+                            enctype="text/plain">
+                            <div class="form-group">
+                                <label for="nome">Seu Nome / Empresa</label>
+                                <input type="text" id="nome" name="nome"
+                                    placeholder="Digite seu nome completo ou da empresa" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Seu E-mail de Contato</label>
+                                <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="assunto">Assunto</label>
+                                <input type="text" id="assunto" name="assunto"
+                                    placeholder="Ex: Oportunidade Back-end / Parceria / Projeto" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="mensagem">Mensagem</label>
+                                <textarea id="mensagem" name="mensagem" rows="5"
+                                    placeholder="Escreva sua mensagem detalhada aqui..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">
+                                Enviar Mensagem para Kauê
+                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <img src="logo_ugb.png" alt="Logo UGB FERP" class="footer-ugb-logo">
+                <div class="footer-text">
+                    <p>&copy; 2026 <strong>Kauê Loreno Lopes</strong> • Portfólio Individual</p>
+                    <p class="footer-sub">Engenharia de Software • 6º Período • Centro Universitário Geraldo Di Biase (UGB)
+                        • Disciplina de DevOps</p>
+                </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <a href="../pedro/index.html" class="nav-link-switch" title="Ver portfólio de Pedro">Ver Pedro →</a>
+                <a href="../joao/index.html" class="nav-link-switch" title="Ver portfólio de João Marcelo">Ver João Marcelo →</a>
+                <a href="#hero" class="back-to-top" title="Voltar ao Topo" aria-label="Voltar ao Topo">↑</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts de Interatividade -->
+    <script>
+        // Terminal Tab Switcher
+        function switchTab(btn, tabId) {
+            document.querySelectorAll('.code-tab').forEach(tab => tab.classList.remove('active'));
+            document.querySelectorAll('.code-tab-content').forEach(content => content.classList.remove('active'));
+
+            const selectedContent = document.getElementById('tab-' + tabId);
+            if (selectedContent) {
+                selectedContent.classList.add('active');
+            }
+            if (btn) {
+                btn.classList.add('active');
+            }
+        }
+    </script>
+
+</body>
+
+</html>

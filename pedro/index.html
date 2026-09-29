@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfólio Profissional e Acadêmico de Pedro Henrique Dornellas - Engenharia de Software, Web Design & DevOps | 6º Período UGB">
+    <title>Pedro Henrique Dornellas • Portfólio de Eng. Software, Web Design & DevOps</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Favicon com Logo UGB -->
+    <link rel="icon" type="image/png" href="logo_ugb.png">
+    <!-- Folha de Estilos Exclusiva em CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#hero" class="nav-logo">
+                <img src="logo_ugb.png" alt="Logo UGB FERP" class="nav-logo-img">
+                <span class="nav-logo-text"><span class="logo-bracket">&lt;</span>Pedro<span class="logo-accent">.Dev</span><span
+                        class="logo-bracket">/&gt;</span></span>
+            </a>
+
+            <!-- Toggle de Menu Mobile (CSS Puro com Checkbox) -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+            <label for="nav-toggle" class="nav-toggle-label" aria-label="Abrir Menu">
+                <span class="hamburger"></span>
+            </label>
+
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#sobre" class="nav-link">Sobre Mim</a></li>
+                    <li class="nav-item"><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                    <li class="nav-item"><a href="#projetos" class="nav-link">Projetos</a></li>
+                    <li class="nav-item"><a href="#formacao" class="nav-link">Experiência &amp; Formação</a></li>
+                    <li class="nav-item"><a href="#contato" class="nav-link nav-link-btn">Contato</a></li>
+                    <li class="nav-item"><a href="../kaue/index.html" class="nav-link-switch" title="Ver portfólio de Kauê Loreno">👤 Kauê</a></li>
+                    <li class="nav-item"><a href="../joao/index.html" class="nav-link-switch" title="Ver portfólio de João Marcelo">👤 João Marcelo</a></li>
+                    <li class="nav-item"><a href="../index.html" class="nav-link-switch" title="Voltar ao portal central">🏛️ Central</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ================= HERO SECTION ================= -->
+        <section class="hero" id="hero">
+            <div class="hero-container container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <img src="logo_ugb.png" alt="Logo UGB" class="badge-logo-img">
+                        <span class="pulse-dot"></span> 6º Período • Engenharia de Software • UGB | SENAI Automação
+                    </div>
+                    <h1 class="hero-title">
+                        Web Design, <span class="gradient-text">DevOps</span> &amp; Engenharia de Software
+                    </h1>
+                    <p class="hero-subtitle">
+                        Portfólio de <strong class="text-highlight">Pedro Henrique Dornellas</strong>. Desenvolvedor Web e Designer
+                        com quase 4 anos de atuação prática corporativa na <strong>Atlante Marketing</strong>, aliando sólida formação em
+                        <strong>Automação Industrial pelo SENAI</strong> ao 6º período de <strong>Engenharia de Software no UGB</strong>,
+                        com foco em front-end de alta conversão, e-commerce, esteiras DevOps e arquitetura de sistemas.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projetos" class="btn btn-primary">
+                            Ver Meus Projetos
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="7" y1="17" x2="17" y2="7"></line>
+                                <polyline points="7 7 17 7 17 17"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#formacao" class="btn btn-secondary">Trajetória Profissional</a>
+                        <a href="#contato" class="btn btn-outline">Fale Comigo</a>
+                    </div>
+
+                    <!-- Quick Dev Avatar & Info -->
+                    <div class="hero-individual-quick">
+                        <div class="duo-avatar ph-avatar">PH</div>
+                        <div class="duo-meta">
+                            <strong>Pedro Henrique Dornellas</strong>
+                            <span>Web Developer &amp; Designer • Atlante Marketing • UGB / SENAI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <!-- Interactive Terminal with Tabs -->
+                    <div class="code-card">
+                        <div class="code-card-header">
+                            <span class="dot dot-red"></span>
+                            <span class="dot dot-yellow"></span>
+                            <span class="dot dot-green"></span>
+                            <div class="code-tabs">
+                                <button type="button" class="code-tab active"
+                                    onclick="switchTab(this, 'perfil')">pedro_perfil.json</button>
+                                <button type="button" class="code-tab"
+                                    onclick="switchTab(this, 'devops')">devops_pipeline.yml</button>
+                                <button type="button" class="code-tab"
+                                    onclick="switchTab(this, 'atlante')">atlante_marketing.md</button>
+                            </div>
+                        </div>
+
+                        <!-- Tab 1: Perfil Pedro -->
+                        <div id="tab-perfil" class="code-tab-content active">
+                            <pre class="code-body"><code><span class="token-comment">// Perfil Profissional: Pedro Henrique Dornellas</span>
+{
+  <span class="token-key">"nome"</span>: <span class="token-string">"Pedro Henrique T. D. S. de Souza"</span>,
+  <span class="token-key">"graduacao"</span>: <span class="token-string">"Engenharia de Software (UGB - 6º Período)"</span>,
+  <span class="token-key">"formacao_tecnica"</span>: <span class="token-string">"Automação e Instrumentação (SENAI)"</span>,
+  <span class="token-key">"mercado"</span>: <span class="token-string">"Desenvolvedor & Web Designer na Atlante Marketing (2022–2026)"</span>,
+  <span class="token-key">"local"</span>: <span class="token-string">"Barra do Piraí – RJ"</span>,
+  <span class="token-key">"github"</span>: <span class="token-string">"github.com/dornellasz93"</span>,
+  <span class="token-key">"linkedin"</span>: <span class="token-string">"linkedin.com/in/pedro-henrique-dornellas"</span>,
+  <span class="token-key">"stack_tecnica"</span>: [
+    <span class="token-string">"HTML5 / CSS3 / JavaScript"</span>,
+    <span class="token-string">"WordPress & Nuvemshop"</span>,
+    <span class="token-string">"Photoshop / Canva / Premiere"</span>,
+    <span class="token-string">"Docker & CI/CD GitHub Actions"</span>,
+    <span class="token-string">"Notion Avançado & Metodologias Ágeis"</span>
+  ],
+  <span class="token-key">"soft_skills"</span>: [<span class="token-string">"Comunicação"</span>, <span class="token-string">"Criatividade"</span>, <span class="token-string">"Resiliência"</span>, <span class="token-string">"Organização"</span>],
+  <span class="token-key">"objetivo"</span>: <span class="token-string">"Excelência em engenharia, soluções web e automação contínua 🚀"</span>
+}</code></pre>
+                        </div>
+
+                        <!-- Tab 2: DevOps Pipeline -->
+                        <div id="tab-devops" class="code-tab-content">
+                            <pre class="code-body"><code><span class="token-comment"># Pipeline de CI/CD - Pedro Henrique DevOps</span>
+<span class="token-key">name</span>: <span class="token-string">"Pedro Henrique CI/CD Workflow"</span>
+<span class="token-key">on</span>:
+  <span class="token-key">push</span>:
+    <span class="token-key">branches</span>: [<span class="token-string">"main"</span>]
+<span class="token-key">jobs</span>:
+  <span class="token-key">build_and_deploy</span>:
+    <span class="token-key">runs-on</span>: <span class="token-string">ubuntu-latest</span>
+    <span class="token-key">steps</span>:
+      - <span class="token-key">name</span>: <span class="token-string">"Checkout do Código"</span>
+        <span class="token-key">uses</span>: <span class="token-string">actions/checkout@v4</span>
+      - <span class="token-key">name</span>: <span class="token-string">"Validação de Sintaxe & Qualidade"</span>
+        <span class="token-key">run</span>: <span class="token-string">npm test --if-present</span>
+      - <span class="token-key">name</span>: <span class="token-string">"Compilar Container Docker"</span>
+        <span class="token-key">run</span>: <span class="token-string">docker build -t ph-portfolio:latest .</span>
+      - <span class="token-key">name</span>: <span class="token-string">"Deploy Homologado"</span>
+        <span class="token-key">run</span>: <span class="token-string">echo "Deploy com Docker finalizado com 100% de sucesso!"</span></code></pre>
+                        </div>
+
+                        <!-- Tab 3: Atlante Marketing -->
+                        <div id="tab-atlante" class="code-tab-content">
+                            <pre class="code-body"><code><span class="token-comment"># Atuação Profissional: Atlante Marketing</span>
+<span class="token-keyword">Empresa</span>: Atlante Marketing
+<span class="token-keyword">Período</span>: 08/2022 a 01/2026 (~4 anos de mercado)
+<span class="token-keyword">Cargo</span>: Desenvolvedor Web & Designer
+<span class="token-keyword">Entregas</span>:
+  - Desenvolvimento e manutenção de sites institucionais WordPress
+  - Configuração de lojas virtuais completas em Nuvemshop
+  - Criação de banners publicitários e identidade visual no Photoshop
+  - Gestão de demandas e documentação de processos no Notion
+  - Otimização de layouts responsivos para mobile e desktop</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SOBRE MIM ================= -->
+        <section class="section sobre" id="sobre">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">01. Perfil Profissional</span>
+                    <h2 class="section-title">Sobre Mim</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <!-- Resumo & Trajetória -->
+                <div class="duo-synergy-banner">
+                    <div class="synergy-logo-box">
+                        <img src="logo_ugb.png" alt="Logo UGB FERP" class="synergy-ugb-logo">
+                    </div>
+                    <div class="synergy-text">
+                        <h3>Trajetória Técnica: Da Automação SENAI à Engenharia &amp; Web Design</h3>
+                        <p>
+                            Minha base técnica foi construída na área de <strong>Automação Industrial e Instrumentação pelo SENAI</strong>,
+                            o que me proporcionou forte raciocínio lógico, entendimento de processos contínuos e disciplina de execução.
+                            Atualmente, curso o <strong>6º período de Engenharia de Software no UGB</strong> e acumulo quase 4 anos de experiência
+                            prática contínua como Desenvolvedor e Web Designer na <strong>Atlante Marketing (2022–2026)</strong>.
+                            Essa vivência me permite criar desde páginas web e lojas de alto padrão visual até esteiras de integração contínua (CI/CD)
+                            e conteinerização com Docker.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card de Perfil Detalhado -->
+                <div class="individual-profile-showcase">
+                    <div class="student-profile-card">
+                        <div class="student-card-header">
+                            <div class="student-avatar-badge ph-gradient">PH</div>
+                            <div>
+                                <h3 class="student-name">Pedro Henrique Tavares Dornellas da Silva de Souza</h3>
+                                <span class="student-role">Web Developer • Web Designer • Automação SENAI • Graduando UGB</span>
+                            </div>
+                        </div>
+                        <div class="student-body">
+                            <p class="student-bio">
+                                Profissional com vivência de quase 4 anos no setor corporativo de tecnologia e comunicação digital.
+                                Especialista no desenvolvimento de plataformas web responsivas, landing pages com alta taxa de conversão,
+                                lojas virtuais robustas (Nuvemshop e WooCommerce/WordPress) e artes gráficas publicitárias com Photoshop.
+                                Na graduação em Engenharia de Software pelo Centro Universitário Geraldo Di Biase (UGB), aprofundo conhecimentos
+                                em arquitetura de microsserviços, esteiras DevOps automatizadas com Docker e GitHub Actions, modelagem de banco de dados
+                                e governança com metodologias ágeis.
+                            </p>
+                            <div class="student-tags">
+                                <span class="student-tag">Barra do Piraí – RJ</span>
+                                <span class="student-tag">Atlante Marketing (4 Anos)</span>
+                                <span class="student-tag">SENAI Automação Industrial</span>
+                                <span class="student-tag">6º Período UGB</span>
+                                <span class="student-tag">Inglês Intermediário</span>
+                                <span class="student-tag">Notion Avançado</span>
+                            </div>
+                            <div class="student-social-links">
+                                <a href="https://www.linkedin.com/in/pedro-henrique-dornellas/" target="_blank"
+                                    rel="noopener noreferrer" class="student-social-btn"
+                                    title="LinkedIn de Pedro Henrique">
+                                    LinkedIn
+                                </a>
+                                <a href="https://github.com/dornellasz93" target="_blank" rel="noopener noreferrer"
+                                    class="student-social-btn" title="GitHub de Pedro Henrique">
+                                    GitHub
+                                </a>
+                                <a href="mailto:dornellas.profissional@gmail.com" class="student-social-btn"
+                                    title="E-mail de Pedro Henrique">
+                                    dornellas.profissional@gmail.com
+                                </a>
+                            </div>
+                            <div class="student-quote">
+                                <em>"Empenhado em contribuir com experiência técnica e desejo contínuo de aprendizado
+                                    para alcançar os objetivos de maneira eficiente, inovadora e visualmente marcante."</em>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Métricas de Destaque -->
+                <div class="sobre-highlights">
+                    <div class="highlight-item">
+                        <span class="highlight-num">4+</span>
+                        <span class="highlight-label">Anos de Experiência Prática</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-num">6º</span>
+                        <span class="highlight-label">Período em Eng. de Software</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-num">2</span>
+                        <span class="highlight-label">Formações Técnicas (SENAI &amp; ICT)</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-num">100%</span>
+                        <span class="highlight-label">Foco em Excelência &amp; DevOps</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= HABILIDADES & TECNOLOGIAS ================= -->
+        <section class="section habilidades" id="habilidades">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">02. Competências Técnicas</span>
+                    <h2 class="section-title">Habilidades &amp; Ferramentas</h2>
+                    <p class="section-desc">Conjunto integrado de hard skills em desenvolvimento web, design gráfico, DevOps e automação.</p>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Categoria 1: Web, Front-end & E-Commerce -->
+                    <div class="skill-category">
+                        <div class="skill-cat-header">
+                            <div class="cat-icon">🌐</div>
+                            <div>
+                                <h3>Web, Front-end &amp; E-Commerce</h3>
+                                <span class="cat-sub">Interfaces &amp; Plataformas Digitais</span>
+                            </div>
+                        </div>
+                        <div class="skill-badges">
+                            <span class="badge">HTML5 Semântico</span>
+                            <span class="badge">CSS3 Moderno / Flexbox &amp; Grid</span>
+                            <span class="badge">JavaScript (ES6+)</span>
+                            <span class="badge">WordPress Avançado</span>
+                            <span class="badge">Nuvemshop E-commerce</span>
+                            <span class="badge">Web Design Responsivo &amp; UI</span>
+                            <span class="badge">Integração de Gateways de Pagamento</span>
+                            <span class="badge">SEO &amp; Performance Web</span>
+                        </div>
+                    </div>
+
+                    <!-- Categoria 2: Design Gráfico & Criação Visual -->
+                    <div class="skill-category">
+                        <div class="skill-cat-header">
+                            <div class="cat-icon">🎨</div>
+                            <div>
+                                <h3>Design Gráfico &amp; Audiovisual</h3>
+                                <span class="cat-sub">Identidade &amp; Peças Publicitárias</span>
+                            </div>
+                        </div>
+                        <div class="skill-badges">
+                            <span class="badge">Adobe Photoshop Avançado</span>
+                            <span class="badge">Canva Pro Intermediário</span>
+                            <span class="badge">Adobe Premiere Pro</span>
+                            <span class="badge">Identidade Visual &amp; Banners</span>
+                            <span class="badge">Facebook Ads &amp; Tráfego</span>
+                            <span class="badge">Composição Gráfica &amp; Mockups</span>
+                        </div>
+                    </div>
+
+                    <!-- Categoria 3: DevOps, Docker & Infraestrutura -->
+                    <div class="skill-category">
+                        <div class="skill-cat-header">
+                            <div class="cat-icon">🐳</div>
+                            <div>
+                                <h3>DevOps, Docker &amp; Infra</h3>
+                                <span class="cat-sub">Conteinerização &amp; Redes</span>
+                            </div>
+                        </div>
+                        <div class="skill-badges">
+                            <span class="badge">Git &amp; GitHub</span>
+                            <span class="badge">CI/CD Pipelines (GitHub Actions)</span>
+                            <span class="badge">Docker &amp; Dockerfile</span>
+                            <span class="badge">Redes de Computadores</span>
+                            <span class="badge">Linux &amp; Shell Scripting</span>
+                            <span class="badge">Notion Avançado (Gestão de Projetos)</span>
+                        </div>
+                    </div>
+
+                    <!-- Categoria 4: Engenharia & Banco de Dados -->
+                    <div class="skill-category">
+                        <div class="skill-cat-header">
+                            <div class="cat-icon">⚙️</div>
+                            <div>
+                                <h3>Engenharia &amp; Automação</h3>
+                                <span class="cat-sub">Modelagem, Lógica &amp; Processos</span>
+                            </div>
+                        </div>
+                        <div class="skill-badges">
+                            <span class="badge">Modelagem de Banco de Dados (DER)</span>
+                            <span class="badge">PostgreSQL &amp; SQL</span>
+                            <span class="badge">Engenharia de Requisitos &amp; UML</span>
+                            <span class="badge">Metodologias Ágeis (Scrum / Kanban)</span>
+                            <span class="badge">Automação Industrial SENAI</span>
+                            <span class="badge">Controle Eletroeletrônico</span>
+                        </div>
+                    </div>
+
+                    <!-- Categoria 5: Idiomas -->
+                    <div class="skill-category">
+                        <div class="skill-cat-header">
+                            <div class="cat-icon">🌍</div>
+                            <div>
+                                <h3>Idiomas</h3>
+                                <span class="cat-sub">Comunicação Técnica</span>
+                            </div>
+                        </div>
+                        <div class="skill-badges">
+                            <span class="badge">Português (Nativo)</span>
+                            <span class="badge">Inglês (Intermediário - Leitura Técnica)</span>
+                        </div>
+                    </div>
+
+                    <!-- Categoria 6: Ferramentas de Gestão -->
+                    <div class="skill-category">
+                        <div class="skill-cat-header">
+                            <div class="cat-icon">📋</div>
+                            <div>
+                                <h3>Gestão &amp; Produtividade</h3>
+                                <span class="cat-sub">Organização e Fluxos</span>
+                            </div>
+                        </div>
+                        <div class="skill-badges">
+                            <span class="badge">Notion Avançado</span>
+                            <span class="badge">Trello &amp; Jira</span>
+                            <span class="badge">Documentação Técnica</span>
+                            <span class="badge">Gestão de Demandas de Clientes</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soft Skills Section -->
+                <div class="soft-skills-container">
+                    <h3 class="soft-skills-title">
+                        <span class="soft-icon">🧠</span> Competências Comportamentais (Soft Skills)
+                    </h3>
+                    <div class="soft-skills-grid">
+                        <div class="soft-card">
+                            <span class="soft-name">Comunicação Clara</span>
+                            <p>Diálogo eficiente com clientes e equipes multidisciplinares para alinhamento de escopo e expectativas.</p>
+                        </div>
+                        <div class="soft-card">
+                            <span class="soft-name">Criatividade &amp; Senso Estético</span>
+                            <p>Capacidade de desenhar interfaces atrativas, harmoniosas e funcionais que geram identificação imediata.</p>
+                        </div>
+                        <div class="soft-card">
+                            <span class="soft-name">Resiliência &amp; Comprometimento</span>
+                            <p>Foco contínuo na superação de prazos e desafios técnicos com alto padrão de qualidade nas entregas.</p>
+                        </div>
+                        <div class="soft-card">
+                            <span class="soft-name">Trabalho em Equipe</span>
+                            <p>Colaboração constante em times de desenvolvimento, agências de marketing e projetos acadêmicos de software.</p>
+                        </div>
+                        <div class="soft-card">
+                            <span class="soft-name">Organização de Processos</span>
+                            <p>Estruturação de fluxos operacionais, cronogramas e documentações detalhadas utilizando Notion e metodologias ágeis.</p>
+                        </div>
+                        <div class="soft-card">
+                            <span class="soft-name">Autodidatismo Constante</span>
+                            <p>Curiosidade e proatividade para aprender novas linguagens, frameworks modernos e práticas recomendadas de DevOps.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PROJETOS ACADÊMICOS & PROFISSIONAIS ================= -->
+        <section class="section projetos" id="projetos">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">03. Portfólio de Produção</span>
+                    <h2 class="section-title">Projetos &amp; Realizações</h2>
+                    <p class="section-desc">Aplicações corporativas no mercado, projetos acadêmicos no UGB e esteiras DevOps automatizadas.</p>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="projetos-grid">
+                    <!-- Projeto 1: Desenvolvimento Web & E-Commerce (Atlante Marketing) -->
+                    <article class="project-card featured-project">
+                        <div class="project-badge-award award-gold">💼 Destaque Profissional (4 Anos de Mercado)</div>
+                        <div class="project-header">
+                            <div class="project-folder-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <span class="project-author-badge ph-tag">Pedro Henrique</span>
+                        </div>
+                        <h3 class="project-title">Soluções Digitais &amp; E-Commerce — Atlante Marketing</h3>
+                        <p class="project-description">
+                            Atuação de quase 4 anos (2022–2026) desenvolvendo sites corporativos, páginas de captura de alta conversão
+                            e lojas virtuais completas. Responsável pela customização avançada de temas WordPress com CSS/HTML/JS,
+                            configuração e parametrização de plataformas Nuvemshop, criação de peças visuais no Photoshop,
+                            integrações de meios de pagamento e organização de fluxos de entrega com Notion.
+                        </p>
+                        <div class="project-techs">
+                            <span>WordPress</span>
+                            <span>Nuvemshop</span>
+                            <span>HTML5 / CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Photoshop</span>
+                            <span>Notion</span>
+                            <span>Facebook Ads</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="project-status-tag">✨ Produção Ativa e Comprovada</span>
+                        </div>
+                    </article>
+
+                    <!-- Projeto 2: Pipeline Automatizado DevOps CI/CD -->
+                    <article class="project-card">
+                        <div class="project-header">
+                            <div class="project-folder-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <span class="project-author-badge ph-tag">DevOps UGB</span>
+                        </div>
+                        <h3 class="project-title">Pipeline Automatizado de CI/CD &amp; Docker</h3>
+                        <p class="project-description">
+                            Implementação de esteira automatizada com GitHub Actions para validação estática de código,
+                            execução de testes automatizados, compilação de imagem Docker conteinerizada e orquestração
+                            de deploy contínuo em ambiente de homologação na disciplina de DevOps do 6º período.
+                        </p>
+                        <div class="project-techs">
+                            <span>GitHub Actions</span>
+                            <span>Docker</span>
+                            <span>YAML</span>
+                            <span>Linux Shell</span>
+                            <span>Testes Automatizados</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/dornellasz93" target="_blank" rel="noopener noreferrer"
+                                class="project-btn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                                </svg>
+                                GitHub
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Projeto 3: Sistema de Gestão & Modelagem Relacional -->
+                    <article class="project-card">
+                        <div class="project-header">
+                            <div class="project-folder-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <span class="project-author-badge ph-tag">Eng. Software UGB</span>
+                        </div>
+                        <h3 class="project-title">Sistema de Gestão &amp; Arquitetura Relacional</h3>
+                        <p class="project-description">
+                            Projeto integrador semestral com especificação completa de requisitos de software (Casos de Uso,
+                            Histórias de Usuário), diagramação UML, modelagem relacional de banco de dados (DER/PostgreSQL),
+                            definição de regras de negócio e planejamento ágil com Scrum.
+                        </p>
+                        <div class="project-techs">
+                            <span>PostgreSQL</span>
+                            <span>Modelagem DER</span>
+                            <span>UML</span>
+                            <span>Eng. Requisitos</span>
+                            <span>Scrum</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="project-status-tag">📐 Prática de Engenharia</span>
+                        </div>
+                    </article>
+
+                    <!-- Projeto 4: Automação Industrial SENAI -->
+                    <article class="project-card">
+                        <div class="project-header">
+                            <div class="project-folder-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <span class="project-author-badge ph-tag">SENAI</span>
+                        </div>
+                        <h3 class="project-title">Sistemas de Automação &amp; Instrumentação Industrial</h3>
+                        <p class="project-description">
+                            Projetos técnicos desenvolvidos durante a formação no SENAI, envolvendo malhas de controle de processos,
+                            sensores industriais, atuadores eletropneumáticos, controladores lógicos e diagramas elétricos aplicados à indústria moderna.
+                        </p>
+                        <div class="project-techs">
+                            <span>Instrumentação</span>
+                            <span>Controle de Processos</span>
+                            <span>Circuitos</span>
+                            <span>Lógica de Automação</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="project-status-tag">⚡ Formação Técnica SENAI</span>
+                        </div>
+                    </article>
+
+                    <!-- Projeto 5: U-Commerce -->
+                    <article class="project-card">
+                        <div class="project-header">
+                            <div class="project-folder-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <span class="project-author-badge ph-tag">Hackathon UGB</span>
+                        </div>
+                        <h3 class="project-title">U-Commerce — Plataforma Universitária de Apoio</h3>
+                        <p class="project-description">
+                            Plataforma concebida para conectar o corpo discente universitário: facilitação de intercâmbio de livros,
+                            materiais didáticos, mentorias e integração da comunidade acadêmica no campus UGB.
+                        </p>
+                        <div class="project-techs">
+                            <span>Ideação</span>
+                            <span>Web Design</span>
+                            <span>Eng. de Software</span>
+                            <span>Modelagem</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="project-status-tag">🏆 3º Lugar Hackathon</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= FORMAÇÃO ACADÊMICA & TRAJETÓRIA ================= -->
+        <section class="section formacao" id="formacao">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">04. Linha do Tempo</span>
+                    <h2 class="section-title">Formação Acadêmica &amp; Experiência</h2>
+                    <p class="section-desc">Evolução educacional e histórico de atuação profissional no mercado e na academia.</p>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="single-timeline-container">
+                    <div class="single-timeline-card">
+                        <div class="timeline-col-header ph-border">
+                            <span class="duo-avatar ph-avatar">PH</span>
+                            <div>
+                                <h3 style="font-size: 1.35rem; font-weight: 800; color: var(--ugb-navy);">Pedro Henrique Dornellas</h3>
+                                <span style="font-size: 0.9rem; color: var(--ugb-sky); font-weight: 600;">Histórico Profissional &amp; Acadêmico</span>
+                            </div>
+                        </div>
+
+                        <div class="timeline">
+                            <!-- Item 1: Graduação UGB -->
+                            <div class="timeline-item">
+                                <div class="timeline-dot ph-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">01/2024 – Presente (Em Curso)</span>
+                                    <h4 class="timeline-title">Bacharelado em Engenharia de Software</h4>
+                                    <h5 class="timeline-institution">Centro Universitário Geraldo Di Biase (UGB)</h5>
+                                    <p class="timeline-desc">
+                                        6º Período. Ênfase em arquitetura de microsserviços, esteiras de DevOps (CI/CD com Docker e GitHub Actions),
+                                        engenharia de requisitos, governança ágil e bancos de dados relacionais.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Item 2: Atlante Marketing -->
+                            <div class="timeline-item">
+                                <div class="timeline-dot ph-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">08/2022 – 01/2026 (Quase 4 Anos)</span>
+                                    <h4 class="timeline-title">Desenvolvedor Web &amp; Web Designer</h4>
+                                    <h5 class="timeline-institution">Atlante Marketing</h5>
+                                    <p class="timeline-desc">
+                                        Desenvolvimento de páginas e lojas virtuais completas (WordPress, Nuvemshop), customizações avançadas em HTML5/CSS3/JavaScript,
+                                        criação de peças visuais no Adobe Photoshop, estratégias digitais e organização operacional via Notion.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Item 3: SENAI Automação -->
+                            <div class="timeline-item">
+                                <div class="timeline-dot ph-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">Concluído</span>
+                                    <h4 class="timeline-title">Técnico em Automação Industrial &amp; Instrumentação</h4>
+                                    <h5 class="timeline-institution">SENAI - Serviço Nacional de Aprendizagem Industrial</h5>
+                                    <p class="timeline-desc">
+                                        Controle de processos contínuos, automação eletroeletrônica, instrumentação, controladores industriais
+                                        e raciocínio analítico para solução de problemas complexos.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Item 4: Histórico Anterior -->
+                            <div class="timeline-item">
+                                <div class="timeline-dot ph-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">Histórico de Formação</span>
+                                    <h4 class="timeline-title">Técnico em Informática &amp; Estágio ICT / CBSI</h4>
+                                    <h5 class="timeline-institution">Colégio ICT &amp; CBSI</h5>
+                                    <p class="timeline-desc">
+                                        Formação técnica em informática com estágio no Colégio ICT (2009) e atuação como Aprendiz na CBSI (2013–2015),
+                                        iniciando a trajetória no setor de tecnologia da informação.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CONTATO ================= -->
+        <section class="section contato" id="contato">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">05. Vamos Conversar?</span>
+                    <h2 class="section-title">Entre em Contato</h2>
+                    <p class="section-desc">Disponível para projetos de desenvolvimento web, oportunidades profissionais, parcerias e estágios em engenharia.</p>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="contato-grid">
+                    <!-- Card de Contato de Pedro -->
+                    <div class="contato-cards-container">
+                        <div class="contact-card">
+                            <div class="contact-card-top">
+                                <div class="duo-avatar ph-avatar">PH</div>
+                                <div>
+                                    <h4>Pedro Henrique Dornellas</h4>
+                                    <span>Web Developer &amp; Web Designer</span>
+                                </div>
+                            </div>
+                            <div class="contact-items">
+                                <div class="contact-item">
+                                    <span class="c-icon">📍</span>
+                                    <div>
+                                        <small>Localização</small>
+                                        <p>Barra do Piraí – RJ (Morada do Vale)</p>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <span class="c-icon">✉️</span>
+                                    <div>
+                                        <small>E-mail</small>
+                                        <a href="mailto:dornellas.profissional@gmail.com">dornellas.profissional@gmail.com</a>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <span class="c-icon">📞</span>
+                                    <div>
+                                        <small>Telefone / WhatsApp</small>
+                                        <a href="tel:+5524998188280">(24) 99818-8280</a>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <span class="c-icon">💼</span>
+                                    <div>
+                                        <small>Experiência de Mercado</small>
+                                        <p>Atlante Marketing (2022–2026)</p>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <span class="c-icon">🔗</span>
+                                    <div>
+                                        <small>Redes Técnicas</small>
+                                        <div class="contact-links-inline">
+                                            <a href="https://www.linkedin.com/in/pedro-henrique-dornellas/"
+                                                target="_blank" rel="noopener noreferrer">LinkedIn</a> •
+                                            <a href="https://github.com/dornellasz93" target="_blank"
+                                                rel="noopener noreferrer">GitHub</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card de Navegação Rápida -->
+                        <div class="contact-card" style="background: var(--ugb-ice-light); border-color: var(--ugb-cyan);">
+                            <div class="contact-card-top">
+                                <span style="font-size: 1.8rem;">🏛️</span>
+                                <div>
+                                    <h4 style="color: var(--ugb-navy);">Navegação do Projeto</h4>
+                                    <span>Portfólios da Disciplina de DevOps</span>
+                                </div>
+                            </div>
+                            <p style="font-size: 0.92rem; color: var(--text-secondary); margin-bottom: 1.2rem;">
+                                Você também pode acessar o portfólio individual de <strong>Kauê Loreno</strong> ou retornar à Central de Portfólios do 6º Período UGB:
+                            </p>
+                            <div style="display: flex; flex-direction: column; gap: 0.6rem;">
+                                <a href="../kaue/index.html" class="portal-btn-secondary" style="background: #ffffff;">
+                                    👤 Acessar Portfólio de Kauê Loreno
+                                </a>
+                                <a href="../joao/index.html" class="portal-btn-secondary" style="background: #ffffff;">
+                                    👤 Acessar Portfólio de João Marcelo
+                                </a>
+                                <a href="../index.html" class="portal-btn-secondary" style="background: #ffffff;">
+                                    🏛️ Retornar à Central de Portfólios
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Formulário de Contato -->
+                    <div class="contato-form-container">
+                        <form class="contato-form" action="mailto:dornellas.profissional@gmail.com" method="POST"
+                            enctype="text/plain">
+                            <div class="form-group">
+                                <label for="nome">Seu Nome / Empresa</label>
+                                <input type="text" id="nome" name="nome"
+                                    placeholder="Digite seu nome completo ou da empresa" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Seu E-mail de Contato</label>
+                                <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="assunto">Assunto</label>
+                                <input type="text" id="assunto" name="assunto"
+                                    placeholder="Ex: Proposta de Oportunidade / Projeto Web / Estágio" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="mensagem">Mensagem</label>
+                                <textarea id="mensagem" name="mensagem" rows="5"
+                                    placeholder="Escreva sua mensagem detalhada aqui..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">
+                                Enviar Mensagem para Pedro
+                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <img src="logo_ugb.png" alt="Logo UGB FERP" class="footer-ugb-logo">
+                <div class="footer-text">
+                    <p>&copy; 2026 <strong>Pedro Henrique Dornellas</strong> • Portfólio Individual</p>
+                    <p class="footer-sub">Engenharia de Software • 6º Período • Centro Universitário Geraldo Di Biase (UGB)
+                        • Disciplina de DevOps</p>
+                </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <a href="../kaue/index.html" class="nav-link-switch" title="Ver portfólio de Kauê">Ver Kauê →</a>
+                <a href="../joao/index.html" class="nav-link-switch" title="Ver portfólio de João Marcelo">Ver João Marcelo →</a>
+                <a href="#hero" class="back-to-top" title="Voltar ao Topo" aria-label="Voltar ao Topo">↑</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts de Interatividade -->
+    <script>
+        // Terminal Tab Switcher
+        function switchTab(btn, tabId) {
+            document.querySelectorAll('.code-tab').forEach(tab => tab.classList.remove('active'));
+            document.querySelectorAll('.code-tab-content').forEach(content => content.classList.remove('active'));
+
+            const selectedContent = document.getElementById('tab-' + tabId);
+            if (selectedContent) {
+                selectedContent.classList.add('active');
+            }
+            if (btn) {
+                btn.classList.add('active');
+            }
+        }
+    </script>
+
+</body>
+
+</html>

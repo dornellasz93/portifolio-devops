@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfólio Acadêmico de João Marcelo Bergamini - Matrícula 2026101202 • Estudante de Engenharia de Software | UGB">
+    <title>João Marcelo Bergamini • Portfólio de Engenharia de Software | UGB</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Favicon com Logo UGB -->
+    <link rel="icon" type="image/png" href="logo_ugb.png">
+    <!-- Folha de Estilos Exclusiva em CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#hero" class="nav-logo">
+                <img src="logo_ugb.png" alt="Logo UGB FERP" class="nav-logo-img">
+                <span class="nav-logo-text"><span class="logo-bracket">&lt;</span>Joao<span class="logo-accent">.Dev</span><span
+                        class="logo-bracket">/&gt;</span></span>
+            </a>
+
+            <!-- Toggle de Menu Mobile (CSS Puro com Checkbox) -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+            <label for="nav-toggle" class="nav-toggle-label" aria-label="Abrir Menu">
+                <span class="hamburger"></span>
+            </label>
+
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#sobre" class="nav-link">Sobre Mim</a></li>
+                    <li class="nav-item"><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                    <li class="nav-item"><a href="#projetos" class="nav-link">Estudos &amp; Projetos</a></li>
+                    <li class="nav-item"><a href="#formacao" class="nav-link">Formação</a></li>
+                    <li class="nav-item"><a href="#identificacao" class="nav-link nav-link-btn">Identificação</a></li>
+                    <li class="nav-item"><a href="../pedro/index.html" class="nav-link-switch" title="Ver portfólio de Pedro Henrique">👤 Pedro</a></li>
+                    <li class="nav-item"><a href="../kaue/index.html" class="nav-link-switch" title="Ver portfólio de Kauê Loreno">👤 Kauê</a></li>
+                    <li class="nav-item"><a href="../index.html" class="nav-link-switch" title="Voltar ao portal central">🏛️ Central</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ================= HERO SECTION ================= -->
+        <section class="hero" id="hero">
+            <div class="hero-container container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <img src="logo_ugb.png" alt="Logo UGB" class="badge-logo-img">
+                        <span class="pulse-dot"></span> Matrícula: 2026101202 • Engenharia de Software • UGB
+                    </div>
+                    <h1 class="hero-title">
+                        Lógica, <span class="gradient-text">Python</span> &amp; Engenharia de Software
+                    </h1>
+                    <p class="hero-subtitle">
+                        Portfólio acadêmico de <strong class="text-highlight">João Marcelo Bergamini</strong> (Matrícula: <strong>2026101202</strong>).
+                        Estudante de Engenharia de Software no Centro Universitário Geraldo Di Biase (UGB), com Ensino Médio completo
+                        e em fase de desenvolvimento nos fundamentos da computação, raciocínio algorítmico,
+                        programação estruturada em <strong>Python (Entry Level)</strong> e introdução às práticas modernas de DevOps.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projetos" class="btn btn-primary">
+                            Ver Meus Estudos
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="7" y1="17" x2="17" y2="7"></line>
+                                <polyline points="7 7 17 7 17 17"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#formacao" class="btn btn-secondary">Formação Acadêmica</a>
+                        <a href="#identificacao" class="btn btn-outline">Dados Institucionais</a>
+                    </div>
+
+                    <!-- Quick Dev Avatar & Info -->
+                    <div class="hero-individual-quick">
+                        <div class="duo-avatar jm-avatar">JM</div>
+                        <div class="duo-meta">
+                            <strong>João Marcelo Bergamini</strong>
+                            <span>Engenharia de Software • Matrícula: 2026101202 • Entry Level Python</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <!-- Interactive Terminal with Tabs -->
+                    <div class="code-card">
+                        <div class="code-card-header">
+                            <span class="dot dot-red"></span>
+                            <span class="dot dot-yellow"></span>
+                            <span class="dot dot-green"></span>
+                            <div class="code-tabs">
+                                <button type="button" class="code-tab active"
+                                    onclick="switchTab(this, 'perfil')">joao_perfil.py</button>
+                                <button type="button" class="code-tab"
+                                    onclick="switchTab(this, 'algoritmo')">calculadora_media.py</button>
+                                <button type="button" class="code-tab"
+                                    onclick="switchTab(this, 'estudos')">devops_iniciante.md</button>
+                            </div>
+                        </div>
+
+                        <!-- Tab 1: Perfil João Marcelo -->
+                        <div id="tab-perfil" class="code-tab-content active">
+                            <pre class="code-body"><code><span class="token-comment"># Perfil Acadêmico: João Marcelo Bergamini</span>
+<span class="token-keyword">class</span> <span class="token-class">SoftwareEngineeringStudent</span>:
+    <span class="token-keyword">def</span> <span class="token-function">__init__</span>(self):
+        self.nome = <span class="token-string">"João Marcelo Bergamini"</span>
+        self.matricula = <span class="token-string">"2026101202"</span>
+        self.instituicao = <span class="token-string">"Centro Universitário Geraldo Di Biase (UGB)"</span>
+        self.curso = <span class="token-string">"Bacharelado em Engenharia de Software"</span>
+        self.nivel_tecnico = <span class="token-string">"Entry Level / Iniciante em Python"</span>
+        self.formacao_base = <span class="token-string">"Ensino Médio Completo"</span>
+        self.experiencia = <span class="token-string">"Em preparação para a 1ª oportunidade profissional"</span>
+        self.pilares_estudo = [
+            <span class="token-string">"Lógica de Programação e Algoritmos"</span>,
+            <span class="token-string">"Sintaxe e Estruturas em Python"</span>,
+            <span class="token-string">"Controle de Versão Básico (Git)"</span>,
+            <span class="token-string">"Conceitos Iniciais de DevOps"</span>
+        ]</code></pre>
+                        </div>
+
+                        <!-- Tab 2: Algoritmo Python -->
+                        <div id="tab-algoritmo" class="code-tab-content">
+                            <pre class="code-body"><code><span class="token-comment"># Prática de Algoritmos & Funções em Python (Entry Level)</span>
+<span class="token-keyword">def</span> <span class="token-function">calcular_situacao_academica</span>(notas):
+    <span class="token-string">"""Calcula a média e determina a situação do estudante"""</span>
+    <span class="token-keyword">if</span> <span class="token-keyword">not</span> notas:
+        <span class="token-keyword">return</span> <span class="token-string">"Sem notas registradas"</span>
+    
+    media = sum(notas) / len(notas)
+    situacao = <span class="token-string">"Aprovado"</span> <span class="token-keyword">if</span> media >= <span class="token-number">6.0</span> <span class="token-keyword">else</span> <span class="token-string">"Exame Final"</span>
+    
+    <span class="token-keyword">return</span> {
+        <span class="token-string">"aluno"</span>: <span class="token-string">"João Marcelo Bergamini"</span>,
+        <span class="token-string">"matricula"</span>: <span class="token-string">"2026101202"</span>,
+        <span class="token-string">"media"</span>: round(media, <span class="token-number">2</span>),
+        <span class="token-string">"status"</span>: situacao
+    }
+
+resultado = calcular_situacao_academica([<span class="token-number">8.0</span>, <span class="token-number">7.5</span>, <span class="token-number">9.0</span>])
+print(resultado)</code></pre>
+                        </div>
+
+                        <!-- Tab 3: Notas de Estudo DevOps -->
+                        <div id="tab-estudos" class="code-tab-content">
+                            <pre class="code-body"><code><span class="token-comment"># Anotações de Aprendizado: DevOps & Engenharia</span>
+<span class="token-keyword">Objetivo</span>: Construção da base técnica inicial
+<span class="token-keyword">Conceitos em Aprendizado</span>:
+  - Git Básico: clone, status, add, commit, push
+  - GitHub: criação e organização de repositórios
+  - Docker: entendimento do conceito de containers e imagens
+  - Lógica Estruturada: variáveis, condicionais e repetições
+  - Boa prática: código limpo, legível e comentado</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SOBRE MIM ================= -->
+        <section class="section sobre" id="sobre">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">01. Perfil Acadêmico</span>
+                    <h2 class="section-title">Sobre Mim</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <!-- Resumo & Propósito -->
+                <div class="duo-synergy-banner">
+                    <div class="synergy-logo-box">
+                        <img src="logo_ugb.png" alt="Logo UGB FERP" class="synergy-ugb-logo">
+                    </div>
+                    <div class="synergy-text">
+                        <h3>Início da Jornada: Dedicação aos Fundamentos da Engenharia de Software</h3>
+                        <p>
+                            Sou estudante de <strong>Engenharia de Software no Centro Universitário Geraldo Di Biase (UGB)</strong>,
+                            com <strong>Ensino Médio completo</strong> e focado na absorção sólida dos conceitos que estruturam
+                            o desenvolvimento de sistemas modernos. Sem experiência profissional prévia no mercado corporativo,
+                            estou dedicando meu tempo integralmente aos estudos universitários, praticando programação introdutória com
+                            <strong>Python (nível Entry Level)</strong>, aprendendo versionamento de código com Git e compreendendo a importância
+                            da cultura DevOps para o ciclo de vida do software.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card de Perfil Detalhado -->
+                <div class="individual-profile-showcase">
+                    <div class="student-profile-card">
+                        <div class="student-card-header">
+                            <div class="student-avatar-badge jm-gradient">JM</div>
+                            <div>
+                                <h3 class="student-name">João Marcelo Bergamini</h3>
+                                <span class="student-role">Graduando em Engenharia de Software • UGB • Matrícula 2026101202</span>
+                            </div>
+                        </div>
+                        <div class="student-body">
+                            <p class="student-bio">
+                                Estudante em início de formação no curso de Bacharelado em Engenharia de Software pelo Centro Universitário Geraldo Di Biase (UGB).
+                                Com formação básica concluída no Ensino Médio, possui foco em construir um alicerce rigoroso em lógica de programação,
+                                algoritmos essenciais e resolução estruturada de problemas matemáticos e computacionais. Seu aprendizado prático concentra-se
+                                em <strong>Python</strong>, explorando desde variáveis e estruturas de controle de fluxo até funções e manipulação de listas.
+                                Mantém postura de aprendizado contínuo, disciplina e entusiasmo pelas disciplinas de tecnologia e DevOps.
+                            </p>
+                            <div class="student-tags">
+                                <span class="student-tag">Matrícula: 2026101202</span>
+                                <span class="student-tag">UGB Engenharia de Software</span>
+                                <span class="student-tag">Ensino Médio Completo</span>
+                                <span class="student-tag">Entry Level Python</span>
+                                <span class="student-tag">Início de Carreira</span>
+                                <span class="student-tag">Foco Acadêmico</span>
+                            </div>
+                            <div class="student-social-links">
+                                <span class="student-social-btn" style="background: var(--bg-secondary); color: var(--text-secondary); cursor: default;">
+                                    🏛️ Perfil Institucional UGB
+                                </span>
+                                <span class="student-social-btn" style="background: var(--bg-secondary); color: var(--text-secondary); cursor: default;">
+                                    🎓 Matrícula: 2026101202
+                                </span>
+                            </div>
+                            <div class="student-quote">
+                                <em>"Construindo a base da minha formação passo a passo, aliando disciplina, curiosidade e determinação para dominar os fundamentos da computação e me tornar um engenheiro de software qualificado."</em>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Métricas de Destaque -->
+                <div class="sobre-highlights">
+                    <div class="highlight-item">
+                        <span class="highlight-num">2026101202</span>
+                        <span class="highlight-label">Matrícula Acadêmica UGB</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-num">Entry</span>
+                        <span class="highlight-label">Level em Python</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-num">100%</span>
+                        <span class="highlight-label">Ensino Médio Concluído</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-num">UGB</span>
+                        <span class="highlight-label">Graduando em Eng. de Software</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= HABILIDADES & COMPETÊNCIAS ================= -->
+        <section class="section habilidades" id="habilidades">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">02. Nível Técnico &amp; Estudos</span>
+                    <h2 class="section-title">Habilidades &amp; Fundamentos</h2>
+                    <p class="section-desc">Mapeamento transparente das competências técnicas em desenvolvimento inicial com Python e noções de engenharia.</p>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Categoria 1: Lógica & Programação Python -->
+                    <div class="skill-category">
+                        <div class="skill-cat-header">
+                            <div class="cat-icon">🐍</div>
+                            <div>
+                                <h3>Python &amp; Lógica de Programação</h3>
+                                <span class="cat-sub">Nível Entry Level / Fundamentos</span>
+                            </div>
+                        </div>
+                        <div class="skill-badges">
+                            <span class="badge">Sintaxe Fundamental de Python</span>
+                            <span class="badge">Variáveis e Tipos Primitivos</span>
+                            <span class="badge">Estruturas Condicionais (if / elif / else)</span>
+                            <span class="badge">Laços de Repetição (for / while)</span>
+                            <span class="badge">Listas, Tuplas e Dicionários Básicos</span>
+                            <span class="badge">Definição de Funções (def)</span>
+                            <span class="badge">Leitura e Escrita Básica no Terminal</span>
+                        </div>
+                    </div>
+
+                    <!-- Categoria 2: Noções de Engenharia & Ferramentas -->
+                    <div class="skill-category">
+                        <div class="skill-cat-header">
+                            <div class="cat-icon">🛠️</div>
+                            <div>
+                                <h3>Ferramentas &amp; Ambiente de Estudo</h3>
+                                <span class="cat-sub">Configuração e Prática Inicial</span>
+                            </div>
+                        </div>
+                        <div class="skill-badges">
+                            <span class="badge">Visual Studio Code (VS Code)</span>
+                            <span class="badge">Interpretador Python 3</span>
+                            <span class="badge">Noções Iniciais de Git</span>
+                            <span class="badge">Terminal / Linha de Comando Básica</span>
+                            <span class="badge">Organização de Arquivos e Pastas</span>
+                            <span class="badge">Documentação de Código</span>
+                        </div>
+                    </div>
+
+                    <!-- Categoria 3: Fundamentos DevOps -->
+                    <div class="skill-category">
+                        <div class="skill-cat-header">
+                            <div class="cat-icon">🐳</div>
+                            <div>
+                                <h3>Introdução a DevOps</h3>
+                                <span class="cat-sub">Conceitos Teóricos Acadêmicos</span>
+                            </div>
+                        </div>
+                        <div class="skill-badges">
+                            <span class="badge">Conceito de Controle de Versão</span>
+                            <span class="badge">Entendimento Teórico do Docker</span>
+                            <span class="badge">Noções de Integração Contínua</span>
+                            <span class="badge">Práticas de Colaboração em Código</span>
+                            <span class="badge">Cultura Ágil em Equipes</span>
+                        </div>
+                    </div>
+
+                    <!-- Categoria 4: Formação Base -->
+                    <div class="skill-category">
+                        <div class="skill-cat-header">
+                            <div class="cat-icon">📐</div>
+                            <div>
+                                <h3>Formação de Base</h3>
+                                <span class="cat-sub">Ensino Médio Completo</span>
+                            </div>
+                        </div>
+                        <div class="skill-badges">
+                            <span class="badge">Raciocínio Lógico-Matemático</span>
+                            <span class="badge">Interpretação e Análise de Problemas</span>
+                            <span class="badge">Redação e Comunicação em Língua Portuguesa</span>
+                            <span class="badge">Geometria e Aritmética Fundamental</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soft Skills Section -->
+                <div class="soft-skills-container">
+                    <h3 class="soft-skills-title">
+                        <span class="soft-icon">🧠</span> Competências Comportamentais (Soft Skills)
+                    </h3>
+                    <div class="soft-skills-grid">
+                        <div class="soft-card">
+                            <span class="soft-name">Vontade Genuína de Aprender</span>
+                            <p>Entusiasmo constante para absorver novos conhecimentos, tirar dúvidas com professores e estudar novas ferramentas.</p>
+                        </div>
+                        <div class="soft-card">
+                            <span class="soft-name">Disciplina &amp; Dedicação</span>
+                            <p>Organização de rotina diária voltada para aulas, laboratórios práticos e resolução contínua de exercícios de lógica.</p>
+                        </div>
+                        <div class="soft-card">
+                            <span class="soft-name">Honestidade Intelectual</span>
+                            <p>Clareza e transparência quanto ao próprio nível de conhecimento, buscando crescer passo a passo com solidez.</p>
+                        </div>
+                        <div class="soft-card">
+                            <span class="soft-name">Atenção aos Detalhes</span>
+                            <p>Cuidado ao escrever os primeiros scripts, verificando erros de sintaxe, indentação e formatação correta de código.</p>
+                        </div>
+                        <div class="soft-card">
+                            <span class="soft-name">Abertura a Feedbacks</span>
+                            <p>Postura receptiva a correções, sugestões de melhoria e orientações de docentes e colegas mais experientes.</p>
+                        </div>
+                        <div class="soft-card">
+                            <span class="soft-name">Resiliência Diante de Desafios</span>
+                            <p>Persistência na busca da solução de bugs e erros de compilação sem desanimar nas primeiras dificuldades.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PROJETOS ACADÊMICOS & EXERCÍCIOS ================= -->
+        <section class="section projetos" id="projetos">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">03. Aprendizado em Ação</span>
+                    <h2 class="section-title">Estudos Práticos &amp; Laboratórios</h2>
+                    <p class="section-desc">Pequenos programas e atividades desenvolvidas para consolidar os fundamentos da programação com Python.</p>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="projetos-grid">
+                    <!-- Projeto 1: Calculadora de Médias Acadêmicas -->
+                    <article class="project-card featured-project">
+                        <div class="project-badge-award award-gold">📘 Estudo de Funções &amp; Listas em Python</div>
+                        <div class="project-header">
+                            <div class="project-folder-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <span class="project-author-badge jm-tag">João Marcelo</span>
+                        </div>
+                        <h3 class="project-title">Sistema de Cálculo de Médias Acadêmicas em Python</h3>
+                        <p class="project-description">
+                            Programa desenvolvido em Python estruturado para receber notas de disciplinas, calcular médias ponderadas,
+                            avaliar critérios de aprovação e emitir relatórios simples no terminal. Projeto criado como exercício de fixação
+                            sobre funções, parâmetros, tipos de dados e condicionais.
+                        </p>
+                        <div class="project-techs">
+                            <span>Python 3</span>
+                            <span>Funções</span>
+                            <span>Listas</span>
+                            <span>Condicionais</span>
+                            <span>Lógica Algorítmica</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="project-status-tag">✨ Exercício Prático Concluído</span>
+                        </div>
+                    </article>
+
+                    <!-- Projeto 2: Gerenciador de Tarefas no Terminal -->
+                    <article class="project-card">
+                        <div class="project-header">
+                            <div class="project-folder-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <span class="project-author-badge jm-tag">Entry Level</span>
+                        </div>
+                        <h3 class="project-title">Gerenciador de Tarefas em Linha de Comando (CLI)</h3>
+                        <p class="project-description">
+                            Aplicação de console interativa com menu de opções numérico, permitindo cadastrar, listar e marcar
+                            tarefas como concluídas. Prática focada em laços de repetição (while), estruturas de dados em dicionários
+                            e validação de entradas do usuário.
+                        </p>
+                        <div class="project-techs">
+                            <span>Python</span>
+                            <span>While Loops</span>
+                            <span>Dicionários</span>
+                            <span>CLI Interativo</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="project-status-tag">📋 Projeto de Fixação</span>
+                        </div>
+                    </article>
+
+                    <!-- Projeto 3: Práticas de Versionamento Git -->
+                    <article class="project-card">
+                        <div class="project-header">
+                            <div class="project-folder-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <span class="project-author-badge jm-tag">DevOps Básico</span>
+                        </div>
+                        <h3 class="project-title">Laboratório de Versionamento com Git &amp; GitHub</h3>
+                        <p class="project-description">
+                            Atividades práticas de controle de versão: configuração inicial de nome de usuário e e-mail no Git,
+                            inicialização de repositório, criação de commits explicativos e organização do fluxo de trabalho
+                            para disciplinas de Engenharia de Software.
+                        </p>
+                        <div class="project-techs">
+                            <span>Git</span>
+                            <span>GitHub</span>
+                            <span>Terminal</span>
+                            <span>Boas Práticas</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="project-status-tag">🔄 Prática de Engenharia</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= FORMAÇÃO ACADÊMICA ================= -->
+        <section class="section formacao" id="formacao">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">04. Trajetória</span>
+                    <h2 class="section-title">Formação Acadêmica</h2>
+                    <p class="section-desc">Histórico educacional e etapa atual na graduação universitária.</p>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="single-timeline-container">
+                    <div class="single-timeline-card">
+                        <div class="timeline-col-header jm-border">
+                            <span class="duo-avatar jm-avatar">JM</span>
+                            <div>
+                                <h3 style="font-size: 1.35rem; font-weight: 800; color: var(--ugb-navy);">João Marcelo Bergamini</h3>
+                                <span style="font-size: 0.9rem; color: #0d9488; font-weight: 600;">Histórico Educacional • Matrícula: 2026101202</span>
+                            </div>
+                        </div>
+
+                        <div class="timeline">
+                            <!-- Item 1: Graduação UGB -->
+                            <div class="timeline-item">
+                                <div class="timeline-dot jm-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">2026 – Presente (Em Curso)</span>
+                                    <h4 class="timeline-title">Bacharelado em Engenharia de Software</h4>
+                                    <h5 class="timeline-institution">Centro Universitário Geraldo Di Biase (UGB • FERP)</h5>
+                                    <p class="timeline-desc">
+                                        Matrícula: <strong>2026101202</strong>. Formação superior voltada para engenharia de software,
+                                        algoritmos, estruturas de dados, fundamentos de DevOps, modelagem e computação.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Item 2: Ensino Médio -->
+                            <div class="timeline-item">
+                                <div class="timeline-dot jm-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">Concluído</span>
+                                    <h4 class="timeline-title">Ensino Médio Completo</h4>
+                                    <h5 class="timeline-institution">Educação Básica Regular</h5>
+                                    <p class="timeline-desc">
+                                        Conclusão regular do Ensino Médio, fornecendo a base para o ingresso no ensino superior,
+                                        com disciplinas em matemática, raciocínio lógico, física e comunicação.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Item 3: Estágio da Carreira -->
+                            <div class="timeline-item">
+                                <div class="timeline-dot jm-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">Momento Atual</span>
+                                    <h4 class="timeline-title">Início de Carreira &amp; Imersão Técnica</h4>
+                                    <h5 class="timeline-institution">Preparação &amp; Capacitação Acadêmica</h5>
+                                    <p class="timeline-desc">
+                                        Sem experiência profissional prévia no mercado corporativo. Foco total em desenvolvimento pessoal,
+                                        estudo da linguagem Python (Entry Level) e preparação técnica para futuras oportunidades de estágio.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= IDENTIFICAÇÃO INSTITUCIONAL ================= -->
+        <section class="section contato" id="identificacao">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">05. Dados Acadêmicos</span>
+                    <h2 class="section-title">Identificação Institucional</h2>
+                    <p class="section-desc">Informações de matrícula e canalização acadêmica no Centro Universitário Geraldo Di Biase.</p>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="single-timeline-container">
+                    <div class="contact-card" style="max-width: 750px; margin: 0 auto; box-shadow: var(--shadow-md);">
+                        <div class="contact-card-top">
+                            <div class="duo-avatar jm-avatar">JM</div>
+                            <div>
+                                <h4 style="font-size: 1.3rem;">João Marcelo Bergamini</h4>
+                                <span style="font-size: 0.95rem; color: #0d9488; font-weight: 600;">Estudante de Engenharia de Software</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-items">
+                            <div class="contact-item">
+                                <span class="c-icon">🎓</span>
+                                <div>
+                                    <small>Número de Matrícula</small>
+                                    <p><strong>2026101202</strong></p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <span class="c-icon">🏛️</span>
+                                <div>
+                                    <small>Instituição de Ensino Superior</small>
+                                    <p>Centro Universitário Geraldo Di Biase (UGB • FERP)</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <span class="c-icon">📚</span>
+                                <div>
+                                    <small>Curso de Graduação</small>
+                                    <p>Bacharelado em Engenharia de Software</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <span class="c-icon">🐍</span>
+                                <div>
+                                    <small>Nível Técnico Atual</small>
+                                    <p>Entry Level em Python (Iniciante / Fundamentos)</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <span class="c-icon">ℹ️</span>
+                                <div>
+                                    <small>Canais de Contato</small>
+                                    <p>Estudante em dedicação exclusiva ao aprendizado acadêmico. Contato disponível formalmente através dos canais institucionais e coordenação de Engenharia de Software do UGB.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Botões de Navegação entre Colegas -->
+                        <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--border-color); display: flex; flex-wrap: wrap; gap: 0.8rem; justify-content: center;">
+                            <a href="../pedro/index.html" class="portal-btn-secondary">
+                                👤 Ver Portfólio de Pedro Henrique
+                            </a>
+                            <a href="../kaue/index.html" class="portal-btn-secondary">
+                                👤 Ver Portfólio de Kauê Loreno
+                            </a>
+                            <a href="../index.html" class="portal-btn-secondary">
+                                🏛️ Ir para o Portal Central
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <img src="logo_ugb.png" alt="Logo UGB FERP" class="footer-ugb-logo">
+                <div class="footer-text">
+                    <p>&copy; 2026 <strong>João Marcelo Bergamini</strong> (Matrícula: 2026101202)</p>
+                    <p class="footer-sub">Bacharelado em Engenharia de Software • Centro Universitário Geraldo Di Biase (UGB • FERP)</p>
+                </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.8rem;">
+                <a href="../index.html" class="nav-link-switch">🏛️ Central</a>
+                <a href="#hero" class="back-to-top" title="Voltar ao Topo" aria-label="Voltar ao Topo">↑</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts de Interatividade -->
+    <script>
+        // Terminal Tab Switcher
+        function switchTab(btn, tabId) {
+            document.querySelectorAll('.code-tab').forEach(tab => tab.classList.remove('active'));
+            document.querySelectorAll('.code-tab-content').forEach(content => content.classList.remove('active'));
+
+            const selectedContent = document.getElementById('tab-' + tabId);
+            if (selectedContent) {
+                selectedContent.classList.add('active');
+            }
+            if (btn) {
+                btn.classList.add('active');
+            }
+        }
+    </script>
+
+</body>
+
+</html>

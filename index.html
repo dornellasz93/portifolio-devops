@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Portfólio Acadêmico de Engenharia de Software & DevOps - Pedro Henrique Dornellas & Kauê Loreno | 6º Período UGB">
-    <title>Portfólio da Dupla | Pedro Henrique & Kauê Loreno • Eng. Software & DevOps</title>
+        content="Portal de Portfólios Acadêmicos e Técnicos de Engenharia de Software & DevOps - Pedro Henrique, Kauê Loreno e João Marcelo | UGB FERP">
+    <title>Portal de Portfólios • Pedro, Kauê &amp; João Marcelo | Eng. Software UGB</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,9 +24,9 @@
     <!-- ================= NAVBAR ================= -->
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="#hero" class="nav-logo">
+            <a href="#portal" class="nav-logo">
                 <img src="logo_ugb.png" alt="Logo UGB FERP" class="nav-logo-img">
-                <span class="nav-logo-text"><span class="logo-bracket">&lt;</span>PeKa<span class="logo-accent">.Dev</span><span
+                <span class="nav-logo-text"><span class="logo-bracket">&lt;</span>DevOps<span class="logo-accent">.Hub</span><span
                         class="logo-bracket">/&gt;</span></span>
             </a>
 
@@ -38,1067 +38,257 @@
 
             <div class="nav-menu">
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="#sobre" class="nav-link">Sobre a Dupla</a></li>
-                    <li class="nav-item"><a href="#habilidades" class="nav-link">Habilidades</a></li>
-                    <li class="nav-item"><a href="#projetos" class="nav-link">Projetos</a></li>
-                    <li class="nav-item"><a href="#destaques" class="nav-link">Prêmios &amp; Pesquisa</a></li>
-                    <li class="nav-item"><a href="#formacao" class="nav-link">Formação</a></li>
-                    <li class="nav-item"><a href="#contato" class="nav-link nav-link-btn">Contato</a></li>
+                    <li class="nav-item"><a href="#portal" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#portfolios" class="nav-link">Portfólios</a></li>
+                    <li class="nav-item"><a href="#devops" class="nav-link">Sobre o DevOps</a></li>
+                    <li class="nav-item"><a href="pedro/index.html" class="nav-link-switch" title="Acessar portfólio de Pedro Henrique">👤 Pedro</a></li>
+                    <li class="nav-item"><a href="kaue/index.html" class="nav-link-switch" title="Acessar portfólio de Kauê Loreno">👤 Kauê</a></li>
+                    <li class="nav-item"><a href="joao/index.html" class="nav-link-switch" title="Acessar portfólio de João Marcelo">👤 João Marcelo</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <main>
-        <!-- ================= HERO SECTION ================= -->
-        <section class="hero" id="hero">
-            <div class="hero-container container">
-                <div class="hero-content">
-                    <div class="hero-badge">
-                        <img src="logo_ugb.png" alt="Logo UGB" class="badge-logo-img">
-                        <span class="pulse-dot"></span> 6º Período • Engenharia de Software • UGB
-                    </div>
-                    <h1 class="hero-title">
-                        Engenharia, <span class="gradient-text">DevOps</span> &amp; Inovação
-                    </h1>
-                    <p class="hero-subtitle">
-                        Portfólio acadêmico e técnico da dupla <strong class="text-highlight">Pedro Henrique
-                            Dornellas</strong> e <strong class="text-highlight">Kauê Loreno</strong>. Unindo formação em
-                        Automação Industrial, desenvolvimento Back-end com Python/Django, conteinerização com Docker,
-                        Web Design, Iniciação Científica e cultura DevOps.
-                    </p>
-                    <div class="hero-actions">
-                        <a href="#projetos" class="btn btn-primary">
-                            Ver Projetos
-                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <line x1="7" y1="17" x2="17" y2="7"></line>
-                                <polyline points="7 7 17 7 17 17"></polyline>
-                            </svg>
-                        </a>
-                        <a href="#destaques" class="btn btn-secondary">Prêmios &amp; Pesquisa</a>
-                        <a href="#contato" class="btn btn-outline">Fale Conosco</a>
-                    </div>
-
-                    <!-- Quick Dev Avatars & Info -->
-                    <div class="hero-duo-quick">
-                        <div class="duo-quick-card">
-                            <div class="duo-avatar ph-avatar">PH</div>
-                            <div class="duo-meta">
-                                <strong>Pedro Henrique</strong>
-                                <span>Web Dev • Design • SENAI / UGB</span>
-                            </div>
-                        </div>
-                        <div class="duo-quick-card">
-                            <div class="duo-avatar kl-avatar">KL</div>
-                            <div class="duo-meta">
-                                <strong>Kauê Loreno</strong>
-                                <span>Back-end • Docker • IFRJ / UGB</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="hero-visual">
-                    <!-- Interactive Terminal with Tabs -->
-                    <div class="code-card">
-                        <div class="code-card-header">
-                            <span class="dot dot-red"></span>
-                            <span class="dot dot-yellow"></span>
-                            <span class="dot dot-green"></span>
-                            <div class="code-tabs">
-                                <button type="button" class="code-tab active"
-                                    onclick="switchTab(this, 'kaue')">kaue_perfil.py</button>
-                                <button type="button" class="code-tab"
-                                    onclick="switchTab(this, 'pedro')">pedro_perfil.json</button>
-                                <button type="button" class="code-tab"
-                                    onclick="switchTab(this, 'dupla')">dupla_devops.yml</button>
-                            </div>
-                        </div>
-
-                        <!-- Tab 1: Kaue -->
-                        <div id="tab-kaue" class="code-tab-content active">
-                            <pre class="code-body"><code><span class="token-comment"># Perfil: Kauê Loreno Lopes</span>
-<span class="token-keyword">class</span> <span class="token-class">SoftwareEngineer</span>:
-    name = <span class="token-string">"Kauê Loreno Lopes"</span>
-    institution = <span class="token-string">"UGB (6º Período) & IFRJ (Técnico)"</span>
-    focus = [<span class="token-string">"Python / Django REST"</span>, <span class="token-string">"Docker"</span>, <span class="token-string">"SQL"</span>]
-    awards = [
-        <span class="token-string">"1º Lugar Inova-San Nissan (Mobilidade)"</span>,
-        <span class="token-string">"3º Lugar Hackathon UGB (U-Commerce)"</span>,
-        <span class="token-string">"1º Lugar Jornada JT IFRJ (FAPERJ)"</span>
-    ]
-    research = <span class="token-string">"Dinâmica de Asteroides (CONIC/JORNIC) & PET-Saúde"</span>
-    english_level = <span class="token-string">"Fluente"</span></code></pre>
-                        </div>
-
-                        <!-- Tab 2: Pedro -->
-                        <div id="tab-pedro" class="code-tab-content">
-                            <pre class="code-body"><code><span class="token-comment">// Perfil: Pedro Henrique Dornellas</span>
-{
-  <span class="token-key">"nome"</span>: <span class="token-string">"Pedro Henrique T. D. S. de Souza"</span>,
-  <span class="token-key">"formacao"</span>: <span class="token-string">"Eng. Software UGB & Automação SENAI"</span>,
-  <span class="token-key">"experiencia"</span>: <span class="token-string">"Web Designer / Dev na Atlante Marketing"</span>,
-  <span class="token-key">"github"</span>: <span class="token-string">"github.com/dornellasz93"</span>,
-  <span class="token-key">"linkedin"</span>: <span class="token-string">"linkedin.com/in/pedro-henrique-dornellas"</span>,
-  <span class="token-key">"hard_skills"</span>: [
-    <span class="token-string">"HTML5/CSS3/JS"</span>, <span class="token-string">"WordPress/Nuvemshop"</span>,
-    <span class="token-string">"Photoshop/Canva/Premiere"</span>, <span class="token-string">"Notion Avançado"</span>
-  ],
-  <span class="token-key">"soft_skills"</span>: [<span class="token-string">"Comunicação"</span>, <span class="token-string">"Criatividade"</span>, <span class="token-string">"Resiliência"</span>],
-  <span class="token-key">"status"</span>: <span class="token-string">"Em constante aprendizado e evolução 🚀"</span>
-}</code></pre>
-                        </div>
-
-                        <!-- Tab 3: Dupla / DevOps -->
-                        <div id="tab-dupla" class="code-tab-content">
-                            <pre
-                                class="code-body"><code><span class="token-comment"># Pipeline & Sinergia da Dupla</span>
-<span class="token-key">version</span>: <span class="token-string">"3.8"</span>
-<span class="token-key">services</span>:
-  <span class="token-key">devops_duo</span>:
-    <span class="token-key">integrantes</span>:
-      - <span class="token-string">"Pedro Henrique (Front, Web Design, Automação)"</span>
-      - <span class="token-string">"Kauê Loreno (Back-end, Docker, Iniciação Científica)"</span>
-    <span class="token-key">ambiente</span>: <span class="token-string">"UGB - 6º Período de Engenharia de Software"</span>
-    <span class="token-key">competencias</span>: [<span class="token-string">"Docker"</span>, <span class="token-string">"CI/CD"</span>, <span class="token-string">"FullStack"</span>, <span class="token-string">"Pesquisa"</span>]
-    <span class="token-key">objetivo</span>: <span class="token-string">"Excelência técnica e impacto prático"</span></code></pre>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ================= SOBRE A DUPLA ================= -->
-        <section class="section sobre" id="sobre">
+    <main id="portal">
+        <!-- ================= PORTAL HERO ================= -->
+        <section class="portal-hero">
             <div class="container">
-                <div class="section-header">
-                    <span class="section-tag">01. Conheça a Equipe</span>
-                    <h2 class="section-title">Sobre a Dupla</h2>
-                    <div class="section-line"></div>
+                <div class="portal-header-badge">
+                    <img src="logo_ugb.png" alt="Logo UGB" class="badge-logo-img">
+                    <span>Engenharia de Software • Centro Universitário Geraldo Di Biase (UGB • FERP)</span>
                 </div>
+                <h1 class="portal-title">
+                    Portal de Portfólios <span class="gradient-text">DevOps &amp; Engenharia</span>
+                </h1>
+                <p class="portal-subtitle">
+                    Bem-vindo à central acadêmica e técnica do UGB. Explore os portfólios individuais completos de
+                    <strong>Pedro Henrique Dornellas</strong>, <strong>Kauê Loreno Lopes</strong> e <strong>João Marcelo Bergamini</strong>,
+                    reunindo desde vivências práticas no mercado corporativo e pesquisas científicas premiadas até os primeiros passos
+                    fundamentais em programação e cultura DevOps.
+                </p>
 
-                <!-- Resumo da Sinergia -->
-                <div class="duo-synergy-banner">
-                    <div class="synergy-logo-box">
-                        <img src="logo_ugb.png" alt="Logo UGB FERP" class="synergy-ugb-logo">
-                    </div>
-                    <div class="synergy-text">
-                        <h3>Sinergia Técnica: Da Automação Industrial à Engenharia de Software</h3>
-                        <p>
-                            Compartilhamos uma base sólida em <strong>Automação Industrial</strong> (formações técnicas
-                            no <strong>SENAI</strong> e <strong>IFRJ</strong>) que hoje potencializa nossa trajetória no
-                            <strong>6º período de Engenharia de Software no UGB</strong>. Combinamos habilidades
-                            complementares: desenvolvimento back-end robusto com Python e conteinerização Docker de um
-                            lado, e soluções completas em Web Design, front-end, e-commerce e comunicação visual do
-                            outro.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Cards dos 2 Alunos -->
-                <div class="students-profiles-grid">
-                    <!-- Perfil 1: Pedro Henrique -->
-                    <div class="student-profile-card">
-                        <div class="student-card-header">
-                            <div class="student-avatar-badge ph-gradient">PH</div>
-                            <div>
-                                <h3 class="student-name">Pedro Henrique Dornellas</h3>
-                                <span class="student-role">Web Developer • Web Designer • Automação SENAI</span>
+                <!-- Cards de Seleção dos 3 Alunos -->
+                <div class="portal-grid-3" id="portfolios">
+                    <!-- Card Pedro Henrique -->
+                    <div class="portal-card ph-card">
+                        <div>
+                            <div class="portal-card-top">
+                                <div class="portal-avatar ph-gradient">PH</div>
+                                <div class="portal-info">
+                                    <h3>Pedro Henrique Dornellas</h3>
+                                    <span class="portal-role">Web Dev • Web Designer • SENAI</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="student-body">
-                            <p class="student-bio">
-                                Estudante de Engenharia de Software no UGB e Técnico em Automação Industrial e
-                                Instrumentação pelo SENAI. Atua como <strong>Desenvolvedor e Web Designer na Atlante
-                                    Marketing (2022–2026)</strong>, com expertise em criação de sites, lojas virtuais
-                                (WordPress, Nuvemshop), design gráfico avançado (Photoshop, Canva, Premiere) e
-                                organização de processos com Notion.
+
+                            <p class="portal-bio">
+                                Desenvolvedor Web e Designer com quase 4 anos de mercado contínuo na <strong>Atlante Marketing (2022–2026)</strong>.
+                                Criação de plataformas e-commerce (WordPress, Nuvemshop), design avançado com Adobe Photoshop e esteiras CI/CD.
                             </p>
-                            <div class="student-tags">
-                                <span class="student-tag">Barra do Piraí – RJ</span>
-                                <span class="student-tag">SENAI Automação</span>
-                                <span class="student-tag">Atlante Marketing</span>
-                                <span class="student-tag">Inglês Intermediário</span>
-                            </div>
-                            <div class="student-social-links">
-                                <a href="https://www.linkedin.com/in/pedro-henrique-dornellas/" target="_blank"
-                                    rel="noopener noreferrer" class="student-social-btn"
-                                    title="LinkedIn de Pedro Henrique">
-                                    LinkedIn
-                                </a>
-                                <a href="https://github.com/dornellasz93" target="_blank" rel="noopener noreferrer"
-                                    class="student-social-btn" title="GitHub de Pedro Henrique">
-                                    GitHub
-                                </a>
-                            </div>
-                            <div class="student-quote">
-                                <em>"Empenhado em contribuir com experiência técnica e desejo contínuo de aprendizado
-                                    para alcançar os objetivos de maneira eficiente e inovadora."</em>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- Perfil 2: Kauê Loreno -->
-                    <div class="student-profile-card">
-                        <div class="student-card-header">
-                            <div class="student-avatar-badge kl-gradient">KL</div>
-                            <div>
-                                <h3 class="student-name">Kauê Loreno Lopes</h3>
-                                <span class="student-role">Back-end Developer • Pesquisador • Automação IFRJ</span>
+                            <div class="portal-features-list">
+                                <div class="portal-feature-item">
+                                    <span class="portal-feature-icon">💼</span>
+                                    <span><strong>Quase 4 anos de mercado</strong> na Atlante Marketing</span>
+                                </div>
+                                <div class="portal-feature-item">
+                                    <span class="portal-feature-icon">🌐</span>
+                                    <span>Desenvolvimento Web, Nuvemshop &amp; WordPress</span>
+                                </div>
+                                <div class="portal-feature-item">
+                                    <span class="portal-feature-icon">🎨</span>
+                                    <span>Design gráfico avançado e identidade com Photoshop</span>
+                                </div>
+                                <div class="portal-feature-item">
+                                    <span class="portal-feature-icon">⚡</span>
+                                    <span>Técnico em Automação Industrial e Instrumentação (SENAI)</span>
+                                </div>
+                            </div>
+
+                            <div class="portal-card-tags">
+                                <span class="badge">WordPress</span>
+                                <span class="badge">Nuvemshop</span>
+                                <span class="badge">Photoshop</span>
+                                <span class="badge">Docker</span>
+                                <span class="badge">SENAI</span>
                             </div>
                         </div>
-                        <div class="student-body">
-                            <p class="student-bio">
-                                Estudante de Engenharia de Software no UGB (previsão 2027) e Técnico em Automação
-                                Industrial pelo IFRJ. Possui histórico consistente em <strong>Iniciação Científica
-                                    (FAPERJ, JORNIC, CONIC)</strong>, monitoria no programa <strong>PET-Saúde Digital
-                                    (Ministérios da Saúde/Educação e SUS)</strong> e conquistas em hackathons, com foco
-                                em Python, Django REST, SQL e Docker.
-                            </p>
-                            <div class="student-tags">
-                                <span class="student-tag">Volta Redonda – RJ</span>
-                                <span class="student-tag">IFRJ Automação</span>
-                                <span class="student-tag">Bolsista FAPERJ</span>
-                                <span class="student-tag">Inglês Fluente</span>
-                            </div>
-                            <div class="student-social-links">
-                                <a href="https://linkedin.com/in/kaueloreno" target="_blank" rel="noopener noreferrer"
-                                    class="student-social-btn" title="LinkedIn de Kauê Loreno">
-                                    LinkedIn
-                                </a>
-                                <a href="https://github.com/ArchKeyor" target="_blank" rel="noopener noreferrer"
-                                    class="student-social-btn" title="GitHub de Kauê Loreno">
-                                    GitHub
-                                </a>
-                            </div>
-                            <div class="student-quote">
-                                <em>"Focado em crescer tecnicamente, aplicar arquitetura de microsserviços e resolver
-                                    problemas reais através da tecnologia e pesquisa."</em>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Métricas da Dupla -->
-                <div class="sobre-highlights">
-                    <div class="highlight-item">
-                        <span class="highlight-num">6º</span>
-                        <span class="highlight-label">Período UGB</span>
-                    </div>
-                    <div class="highlight-item">
-                        <span class="highlight-num">3+</span>
-                        <span class="highlight-label">Prêmios &amp; Hackathons</span>
-                    </div>
-                    <div class="highlight-item">
-                        <span class="highlight-num">2</span>
-                        <span class="highlight-label">Formações Técnicas (SENAI/IFRJ)</span>
-                    </div>
-                    <div class="highlight-item">
-                        <span class="highlight-num">100%</span>
-                        <span class="highlight-label">Sinergia Full-Stack &amp; DevOps</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ================= HABILIDADES & TECNOLOGIAS ================= -->
-        <section class="section habilidades" id="habilidades">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-tag">02. Nosso Arsenal Técnico</span>
-                    <h2 class="section-title">Habilidades &amp; Competências</h2>
-                    <p class="section-desc">Mapeamento integrado das competências técnicas (Hard Skills) e
-                        comportamentais (Soft Skills) de ambos os estudantes.</p>
-                    <div class="section-line"></div>
-                </div>
-
-                <!-- Skills Filter Controls -->
-                <div class="skills-filter-bar">
-                    <button type="button" class="filter-btn active" onclick="filterSkills(this, 'all')">Todas as
-                        Competências</button>
-                    <button type="button" class="filter-btn" onclick="filterSkills(this, 'ph')">Pedro Henrique</button>
-                    <button type="button" class="filter-btn" onclick="filterSkills(this, 'kl')">Kauê Loreno</button>
-                    <button type="button" class="filter-btn" onclick="filterSkills(this, 'duo')">Competências
-                        Compartilhadas</button>
-                </div>
-
-                <div class="skills-grid">
-                    <!-- Categoria 1: DevOps, Docker & Infraestrutura -->
-                    <div class="skill-category" data-student="kl duo ph">
-                        <div class="skill-cat-header">
-                            <div class="cat-icon">🐳</div>
-                            <div>
-                                <h3>DevOps, Docker &amp; Infra</h3>
-                                <span class="cat-sub">Conteinerização &amp; Redes</span>
-                            </div>
-                        </div>
-                        <div class="skill-badges">
-                            <span class="badge" data-who="kl">Docker <small>(Kauê)</small></span>
-                            <span class="badge" data-who="duo">Git &amp; GitHub <small>(Ambos)</small></span>
-                            <span class="badge" data-who="duo">CI/CD Pipelines <small>(DevOps UGB)</small></span>
-                            <span class="badge" data-who="ph">Redes de Computadores <small>(Pedro)</small></span>
-                            <span class="badge" data-who="kl">Dockerização de APIs <small>(Kauê)</small></span>
-                            <span class="badge" data-who="duo">Linux &amp; Shell <small>(Ambos)</small></span>
-                        </div>
-                    </div>
-
-                    <!-- Categoria 2: Back-end & Linguagens -->
-                    <div class="skill-category" data-student="kl ph">
-                        <div class="skill-cat-header">
-                            <div class="cat-icon">🐍</div>
-                            <div>
-                                <h3>Back-end &amp; Programação</h3>
-                                <span class="cat-sub">Lógica, Frameworks &amp; Banco</span>
-                            </div>
-                        </div>
-                        <div class="skill-badges">
-                            <span class="badge" data-who="kl">Python <small>(Kauê)</small></span>
-                            <span class="badge" data-who="kl">Django &amp; Django REST <small>(Kauê)</small></span>
-                            <span class="badge" data-who="kl">SQL / PostgreSQL <small>(Kauê)</small></span>
-                            <span class="badge" data-who="ph">JavaScript <small>(Pedro)</small></span>
-                            <span class="badge" data-who="duo">Lógica de Automação <small>(SENAI / IFRJ)</small></span>
-                            <span class="badge" data-who="kl">RESTful APIs <small>(Kauê)</small></span>
-                        </div>
-                    </div>
-
-                    <!-- Categoria 3: Front-end, Web & E-Commerce -->
-                    <div class="skill-category" data-student="ph">
-                        <div class="skill-cat-header">
-                            <div class="cat-icon">🌐</div>
-                            <div>
-                                <h3>Web, Front-end &amp; E-Commerce</h3>
-                                <span class="cat-sub">Interfaces &amp; Plataformas</span>
-                            </div>
-                        </div>
-                        <div class="skill-badges">
-                            <span class="badge" data-who="ph">HTML5 Semântico <small>(Pedro)</small></span>
-                            <span class="badge" data-who="ph">CSS3 Moderno <small>(Pedro)</small></span>
-                            <span class="badge" data-who="ph">WordPress Intermediário <small>(Pedro)</small></span>
-                            <span class="badge" data-who="ph">Nuvemshop E-commerce <small>(Pedro)</small></span>
-                            <span class="badge" data-who="ph">Web Design Responsivo <small>(Pedro)</small></span>
-                            <span class="badge" data-who="ph">Atlante Mkt Dev <small>(Pedro)</small></span>
-                        </div>
-                    </div>
-
-                    <!-- Categoria 4: Design Gráfico & Mídia -->
-                    <div class="skill-category" data-student="ph">
-                        <div class="skill-cat-header">
-                            <div class="cat-icon">🎨</div>
-                            <div>
-                                <h3>Design, Mídia &amp; Criação</h3>
-                                <span class="cat-sub">Audiovisual &amp; Identidade</span>
-                            </div>
-                        </div>
-                        <div class="skill-badges">
-                            <span class="badge" data-who="ph">Photoshop Avançado <small>(Pedro)</small></span>
-                            <span class="badge" data-who="ph">Canva Intermediário <small>(Pedro)</small></span>
-                            <span class="badge" data-who="ph">Premiere Pro <small>(Pedro)</small></span>
-                            <span class="badge" data-who="ph">Facebook Ads <small>(Pedro)</small></span>
-                            <span class="badge" data-who="ph">Criação Visual <small>(Pedro)</small></span>
-                        </div>
-                    </div>
-
-                    <!-- Categoria 5: Pesquisa, Gestão & Extensão -->
-                    <div class="skill-category" data-student="kl ph duo">
-                        <div class="skill-cat-header">
-                            <div class="cat-icon">🔬</div>
-                            <div>
-                                <h3>Pesquisa &amp; Gestão</h3>
-                                <span class="cat-sub">Iniciação Científica &amp; Métodos</span>
-                            </div>
-                        </div>
-                        <div class="skill-badges">
-                            <span class="badge" data-who="kl">Iniciação Científica FAPERJ <small>(Kauê)</small></span>
-                            <span class="badge" data-who="kl">PET-Saúde Digital SUS <small>(Kauê)</small></span>
-                            <span class="badge" data-who="ph">Notion Avançado <small>(Pedro)</small></span>
-                            <span class="badge" data-who="kl">Pitch &amp; Apresentação <small>(Kauê)</small></span>
-                            <span class="badge" data-who="duo">Metodologias Ágeis <small>(Ambos)</small></span>
-                            <span class="badge" data-who="kl">CONIC / JORNIC <small>(Kauê)</small></span>
-                        </div>
-                    </div>
-
-                    <!-- Categoria 6: Idiomas -->
-                    <div class="skill-category" data-student="kl ph duo">
-                        <div class="skill-cat-header">
-                            <div class="cat-icon">🌍</div>
-                            <div>
-                                <h3>Idiomas</h3>
-                                <span class="cat-sub">Comunicação Internacional</span>
-                            </div>
-                        </div>
-                        <div class="skill-badges">
-                            <span class="badge" data-who="kl">Inglês Fluente <small>(Kauê)</small></span>
-                            <span class="badge" data-who="ph">Inglês Intermediário <small>(Pedro)</small></span>
-                            <span class="badge" data-who="duo">Português Nativo <small>(Ambos)</small></span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Soft Skills Section -->
-                <div class="soft-skills-container">
-                    <h3 class="soft-skills-title">
-                        <span class="soft-icon">🧠</span> Competências Comportamentais (Soft Skills)
-                    </h3>
-                    <div class="soft-skills-grid">
-                        <div class="soft-card">
-                            <span class="soft-name">Comunicação</span>
-                            <p>Transmissão clara de ideias técnicas, alinhamento e facilidade na articulação de
-                                apresentações e pitches.</p>
-                        </div>
-                        <div class="soft-card">
-                            <span class="soft-name">Trabalho em Equipe &amp; Colaboração</span>
-                            <p>Experiência ativa em grupos multidisciplinares, hackathons competitivos e ambiente
-                                corporativo.</p>
-                        </div>
-                        <div class="soft-card">
-                            <span class="soft-name">Autodidatismo &amp; Aprendizado Contínuo</span>
-                            <p>Capacidade autônoma de absorver novas stacks, ferramentas de desenvolvimento e boas
-                                práticas de engenharia.</p>
-                        </div>
-                        <div class="soft-card">
-                            <span class="soft-name">Criatividade &amp; Ideação</span>
-                            <p>Desenvolvimento de soluções inovadoras para mobilidade urbana, acessibilidade e
-                                plataformas digitais.</p>
-                        </div>
-                        <div class="soft-card">
-                            <span class="soft-name">Pensamento Crítico &amp; Resolução de Problemas</span>
-                            <p>Análise estruturada de cenários complexos, modelagem de dados e depuração eficiente de
-                                sistemas.</p>
-                        </div>
-                        <div class="soft-card">
-                            <span class="soft-name">Resiliência, Adaptabilidade &amp; Ética</span>
-                            <p>Postura profissional responsável, flexibilidade diante de mudanças e comprometimento com
-                                entregas de alto padrão.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ================= PROJETOS ACADÊMICOS & PRÁTICOS ================= -->
-        <section class="section projetos" id="projetos">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-tag">03. Portfólio de Projetos</span>
-                    <h2 class="section-title">Projetos &amp; Produção Prática</h2>
-                    <p class="section-desc">Aplicações reais, soluções desenvolvidas em hackathons e esteiras DevOps da
-                        dupla.</p>
-                    <div class="section-line"></div>
-                </div>
-
-                <div class="projetos-grid">
-                    <!-- Projeto 1: U-Commerce (Kauê) -->
-                    <article class="project-card featured-project">
-                        <div class="project-badge-award">🏆 3º Lugar Hackathon UGB (Maio/2026)</div>
-                        <div class="project-header">
-                            <div class="project-folder-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path
-                                        d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
-                                    </path>
+                        <div class="portal-actions">
+                            <a href="pedro/index.html" class="portal-btn-primary ph-btn">
+                                Acessar Portfólio de Pedro
+                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
                                 </svg>
-                            </div>
-                            <span class="project-author-badge duo-tag">Ambos</span>
-                        </div>
-                        <h3 class="project-title">U-Commerce — Plataforma Acadêmica de Troca e Materiais</h3>
-                        <p class="project-description">
-                            Plataforma desenvolvida para conectar estudantes universitários: compra e venda de materiais
-                            acadêmicos, mentorias entre alunos e busca por suporte em disciplinas. Kauê foi o
-                            responsável pela <strong>dockerização da aplicação</strong>, organização do time,
-                            colaboração no back-end com <strong>Django REST Framework</strong> e apresentação do
-                            <strong>pitch final</strong> premiado.
-                        </p>
-                        <div class="project-techs">
-                            <span>Python</span>
-                            <span>Django</span>
-                            <span>Django REST</span>
-                            <span>SQL</span>
-                            <span>Docker</span>
-                            <span>Git/GitHub</span>
-                            <span>Pitch</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/ArchKeyor" target="_blank" rel="noopener noreferrer"
-                                class="project-btn">
-                                <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <path
-                                        d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
-                                </svg>
-                                Repositório GitHub
                             </a>
-                        </div>
-                    </article>
-
-                    <!-- Projeto 2: Caminho Livre (Kauê) -->
-                    <article class="project-card featured-project">
-                        <div class="project-badge-award award-gold">🥇 1º Lugar Inova-San Nissan (4ª Edição)</div>
-                        <div class="project-header">
-                            <div class="project-folder-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path
-                                        d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
-                                    </path>
-                                </svg>
+                            <div class="portal-quick-socials">
+                                <a href="https://www.linkedin.com/in/pedro-henrique-dornellas/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                                <span>•</span>
+                                <a href="https://github.com/dornellasz93" target="_blank" rel="noopener noreferrer">GitHub</a>
+                                <span>•</span>
+                                <a href="mailto:dornellas.profissional@gmail.com">E-mail</a>
                             </div>
-                            <span class="project-author-badge kl-tag">Kauê Loreno</span>
                         </div>
-                        <h3 class="project-title">Caminho Livre — Navegação Assistiva para PCD Visual</h3>
-                        <p class="project-description">
-                            Idealização e apresentação de aplicativo inovador para orientar pessoas com deficiência
-                            visual em ambientes internos: mapeamento digital do estabelecimento e orientação espacial em
-                            tempo real. Projeto vencedor entre 51 propostas de 24 instituições do Sul Fluminense em
-                            equipe multidisciplinar.
+                    </div>
+
+                    <!-- Card Kauê Loreno -->
+                    <div class="portal-card kl-card">
+                        <div>
+                            <div class="portal-card-top">
+                                <div class="portal-avatar kl-gradient">KL</div>
+                                <div class="portal-info">
+                                    <h3>Kauê Loreno Lopes</h3>
+                                    <span class="portal-role">Back-end • Pesquisador FAPERJ • IFRJ</span>
+                                </div>
+                            </div>
+
+                            <p class="portal-bio">
+                                Desenvolvedor Back-end especializado em <strong>Python, Django REST e Docker</strong>.
+                                Bolsista de Iniciação Científica da <strong>FAPERJ</strong>, monitor federal no PET-Saúde Digital e
+                                campeão regional do <strong>1º Lugar Nissan Inova-San</strong>.
+                            </p>
+
+                            <div class="portal-features-list">
+                                <div class="portal-feature-item">
+                                    <span class="portal-feature-icon">🥇</span>
+                                    <span><strong>1º Lugar Nissan Inova-San</strong> (Caminho Livre PCD)</span>
+                                </div>
+                                <div class="portal-feature-item">
+                                    <span class="portal-feature-icon">🐍</span>
+                                    <span>Back-end sólido com Python, Django REST e PostgreSQL</span>
+                                </div>
+                                <div class="portal-feature-item">
+                                    <span class="portal-feature-icon">🔬</span>
+                                    <span>Bolsista FAPERJ &amp; PIC Asteroide aprovado no <strong>CONIC</strong></span>
+                                </div>
+                                <div class="portal-feature-item">
+                                    <span class="portal-feature-icon">🌍</span>
+                                    <span>Técnico IFRJ, monitor PET-Saúde &amp; <strong>Inglês Fluente</strong></span>
+                                </div>
+                            </div>
+
+                            <div class="portal-card-tags">
+                                <span class="badge">Python</span>
+                                <span class="badge">Django REST</span>
+                                <span class="badge">Docker</span>
+                                <span class="badge">FAPERJ</span>
+                                <span class="badge">IFRJ</span>
+                            </div>
+                        </div>
+
+                        <div class="portal-actions">
+                            <a href="kaue/index.html" class="portal-btn-primary kl-btn">
+                                Acessar Portfólio de Kauê
+                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+                            <div class="portal-quick-socials">
+                                <a href="https://linkedin.com/in/kaueloreno" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                                <span>•</span>
+                                <a href="https://github.com/ArchKeyor" target="_blank" rel="noopener noreferrer">GitHub</a>
+                                <span>•</span>
+                                <a href="mailto:lorenokaue3p@gmail.com">E-mail</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card João Marcelo Bergamini -->
+                    <div class="portal-card jm-card">
+                        <div>
+                            <div class="portal-card-top">
+                                <div class="portal-avatar jm-gradient">JM</div>
+                                <div class="portal-info">
+                                    <h3>João Marcelo Bergamini</h3>
+                                    <span class="portal-role">Eng. de Software • Matrícula 2026101202</span>
+                                </div>
+                            </div>
+
+                            <p class="portal-bio">
+                                Estudante de Engenharia de Software no UGB com <strong>Ensino Médio completo</strong>.
+                                Em fase inicial de carreira técnica, dedicando-se ao domínio de lógica de programação,
+                                <strong>Python (Entry Level)</strong>, noções de Git e fundamentos de DevOps.
+                            </p>
+
+                            <div class="portal-features-list">
+                                <div class="portal-feature-item">
+                                    <span class="portal-feature-icon">🎓</span>
+                                    <span><strong>Matrícula: 2026101202</strong> no curso de Eng. de Software</span>
+                                </div>
+                                <div class="portal-feature-item">
+                                    <span class="portal-feature-icon">📜</span>
+                                    <span>Ensino Médio concluído com base lógica e matemática</span>
+                                </div>
+                                <div class="portal-feature-item">
+                                    <span class="portal-feature-icon">🐍</span>
+                                    <span>Prática inicial em <strong>Python (Entry Level)</strong> &amp; algoritmos</span>
+                                </div>
+                                <div class="portal-feature-item">
+                                    <span class="portal-feature-icon">🚀</span>
+                                    <span>Preparação acadêmica para a primeira oportunidade</span>
+                                </div>
+                            </div>
+
+                            <div class="portal-card-tags">
+                                <span class="badge">Python</span>
+                                <span class="badge">Entry Level</span>
+                                <span class="badge">Matrícula: 2026101202</span>
+                                <span class="badge">UGB</span>
+                                <span class="badge">Git Básico</span>
+                            </div>
+                        </div>
+
+                        <div class="portal-actions">
+                            <a href="joao/index.html" class="portal-btn-primary jm-btn">
+                                Acessar Portfólio de João
+                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+                            <div class="portal-quick-socials">
+                                <span style="font-size: 0.85rem; color: var(--text-muted);">
+                                    🏛️ Perfil Institucional UGB • Matrícula 2026101202
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Banner de Contexto da Disciplina de DevOps -->
+                <div class="portal-devops-overview" id="devops">
+                    <div class="portal-devops-content">
+                        <h2>Engenharia de Software &amp; Cultura DevOps no UGB</h2>
+                        <p>
+                            Este portal reúne os portfólios dos estudantes do Centro Universitário Geraldo Di Biase (UGB • FERP),
+                            articulando as diversas fases de formação do estudante de engenharia: desde o domínio dos conceitos
+                            iniciais de sintaxe e lógica, até a construção de arquiteturas corporativas, dockerização,
+                            microsserviços e esteiras automatizadas de integração e deploy contínuos.
                         </p>
-                        <div class="project-techs">
-                            <span>Acessibilidade Digital</span>
-                            <span>Cidades Inteligentes</span>
-                            <span>Ideação &amp; Pitch</span>
-                            <span>Mobilidade Urbana</span>
-                            <span>Nissan Inova-San</span>
-                        </div>
-                        <div class="project-links">
-                            <span class="project-status-tag">✨ Projeto Campeão Regional</span>
-                        </div>
-                    </article>
 
-                    <!-- Projeto 3: Desenvolvimento Web & E-Commerce (Pedro) -->
-                    <article class="project-card">
-                        <div class="project-header">
-                            <div class="project-folder-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path
-                                        d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
-                                    </path>
-                                </svg>
+                        <div class="portal-devops-pillars">
+                            <div class="portal-pillar-card">
+                                <div class="portal-pillar-icon">🔄</div>
+                                <h4>Integração Contínua (CI)</h4>
+                                <p>Automação de verificações estáticas, testes unitários e build contínuo via GitHub Actions.</p>
                             </div>
-                            <span class="project-author-badge ph-tag">Pedro Henrique</span>
-                        </div>
-                        <h3 class="project-title">Soluções Digitais &amp; E-Commerce — Atlante Marketing</h3>
-                        <p class="project-description">
-                            Atuação contínua de 2022 a 2026 desenvolvendo sites corporativos, páginas de captura e lojas
-                            virtuais completas. Integração de gateways de pagamento, customização avançada de temas
-                            WordPress, configuração de plataformas Nuvemshop e criação visual de banners e identidades
-                            com Adobe Photoshop.
-                        </p>
-                        <div class="project-techs">
-                            <span>WordPress</span>
-                            <span>Nuvemshop</span>
-                            <span>HTML5 / CSS3</span>
-                            <span>Photoshop</span>
-                            <span>Facebook Ads</span>
-                            <span>Notion</span>
-                        </div>
-                        <div class="project-links">
-                            <span class="project-status-tag">💼 Produção Profissional Ativa</span>
-                        </div>
-                    </article>
-
-                    <!-- Projeto 4: Pipeline Automatizado DevOps CI/CD (Dupla) -->
-                    <article class="project-card">
-                        <div class="project-header">
-                            <div class="project-folder-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path
-                                        d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
-                                    </path>
-                                </svg>
+                            <div class="portal-pillar-card">
+                                <div class="portal-pillar-icon">🐳</div>
+                                <h4>Conteinerização</h4>
+                                <p>Padronização de ambientes de execução isolados, reproduzíveis e portáveis com Docker.</p>
                             </div>
-                            <span class="project-author-badge duo-tag">Projeto da Dupla • DevOps UGB</span>
-                        </div>
-                        <h3 class="project-title">Pipeline Automatizado de CI/CD &amp; Docker</h3>
-                        <p class="project-description">
-                            Implementação de esteira automatizada com GitHub Actions para validação estática de código,
-                            execução de testes automatizados, compilação de imagem Docker conteinerizada e orquestração
-                            de deploy contínuo em ambiente de homologação.
-                        </p>
-                        <div class="project-techs">
-                            <span>GitHub Actions</span>
-                            <span>Docker</span>
-                            <span>YAML</span>
-                            <span>Linux Shell</span>
-                            <span>Testes Unitários</span>
-                        </div>
-                        <div class="project-links">
-                            <span class="project-status-tag">🚀 Disciplina de DevOps UGB</span>
-                        </div>
-                    </article>
-
-                    <!-- Projeto 5: Geometria com Euclides (Kauê - FAPERJ) -->
-                    <article class="project-card">
-                        <div class="project-badge-award">🥇 1º Lugar Ciências Exatas (Jornada JT - IFRJ)</div>
-                        <div class="project-header">
-                            <div class="project-folder-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path
-                                        d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
-                                    </path>
-                                </svg>
+                            <div class="portal-pillar-card">
+                                <div class="portal-pillar-icon">🚀</div>
+                                <h4>Deploy Automatizado</h4>
+                                <p>Orquestração ágil de entrega contínua com feedback imediato de estabilidade e métricas.</p>
                             </div>
-                            <span class="project-author-badge kl-tag">Kauê Loreno</span>
-                        </div>
-                        <h3 class="project-title">Software Educacional "Aprendendo Geometria com Euclides"</h3>
-                        <p class="project-description">
-                            Projeto de Iniciação Científica como bolsista FAPERJ no IFRJ, focado no desenvolvimento de
-                            software e sistemas interativos para apoio pedagógico ao ensino de Geometria Euclidiana e
-                            raciocínio lógico-matemático.
-                        </p>
-                        <div class="project-techs">
-                            <span>Bolsa FAPERJ</span>
-                            <span>IFRJ</span>
-                            <span>Software Educacional</span>
-                            <span>Lógica &amp; Sistemas</span>
-                        </div>
-                        <div class="project-links">
-                            <span class="project-status-tag">🔬 Iniciação Científica Premiada</span>
-                        </div>
-                    </article>
-
-                    <!-- Projeto 6: Modelagem & Engenharia de Requisitos (Dupla) -->
-                    <article class="project-card">
-                        <div class="project-header">
-                            <div class="project-folder-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path
-                                        d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
-                                    </path>
-                                </svg>
-                            </div>
-                            <span class="project-author-badge duo-tag">Eng. Software UGB</span>
-                        </div>
-                        <h3 class="project-title">Sistema de Gestão &amp; Arquitetura Relacional</h3>
-                        <p class="project-description">
-                            Projeto semestral integrador com levantamento de requisitos de software (Casos de Uso,
-                            Histórias de Usuário), modelagem relacional de banco de dados (DER/PostgreSQL),
-                            especificação de endpoints REST e documentação estruturada.
-                        </p>
-                        <div class="project-techs">
-                            <span>PostgreSQL</span>
-                            <span>Modelagem DER</span>
-                            <span>UML</span>
-                            <span>Eng. Requisitos</span>
-                            <span>Scrum</span>
-                        </div>
-                        <div class="project-links">
-                            <span class="project-status-tag">📐 Prática de Engenharia</span>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- ================= PRÊMIOS, PESQUISA & DESTAQUES ================= -->
-        <section class="section destaques" id="destaques">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-tag">04. Reconhecimento &amp; Ciência</span>
-                    <h2 class="section-title">Prêmios, Iniciação Científica &amp; Extensão</h2>
-                    <p class="section-desc">Histórico de conquistas acadêmicas, participação em congressos nacionais e
-                        atuação em projetos governamentais.</p>
-                    <div class="section-line"></div>
-                </div>
-
-                <div class="destaques-grid">
-                    <!-- Destaque 1: Inova-San Nissan -->
-                    <div class="destaque-card highlight-glow">
-                        <div class="destaque-trophy">🥇</div>
-                        <div class="destaque-content">
-                            <span class="destaque-tag">1º Lugar Regional • Nissan Inova-San</span>
-                            <h3 class="destaque-title">Mobilidade Urbana &amp; Cidades Inteligentes</h3>
-                            <p class="destaque-desc">
-                                4ª edição do programa Inova-San promovido pela montadora Nissan. O projeto
-                                <strong>Caminho Livre</strong> alcançou o 1º lugar concorrendo com <strong>51 projetos
-                                    de 24 instituições de ensino superior</strong> de todo o Sul Fluminense.
-                            </p>
-                            <span class="destaque-author">Participação: <strong>Kauê Loreno</strong></span>
-                        </div>
-                    </div>
-
-                    <!-- Destaque 2: Hackathon UGB -->
-                    <div class="destaque-card">
-                        <div class="destaque-trophy">🥉</div>
-                        <div class="destaque-content">
-                            <span class="destaque-tag">3º Lugar • Hackathon Universitário</span>
-                            <h3 class="destaque-title">Hackathon UGB (Maio/2026)</h3>
-                            <p class="destaque-desc">
-                                Premiação no Hackathon da instituição com o projeto <strong>U-Commerce</strong>,
-                                destacando-se na agilidade de desenvolvimento back-end, dockerização rápida e
-                                apresentação executiva de pitch perante a banca avaliadora.
-                            </p>
-                            <span class="destaque-author">Participação: <strong>Kauê Loreno</strong></span>
-                        </div>
-                    </div>
-
-                    <!-- Destaque 3: XIX Jornada JT IFRJ -->
-                    <div class="destaque-card">
-                        <div class="destaque-trophy">🏆</div>
-                        <div class="destaque-content">
-                            <span class="destaque-tag">1º Lugar Ciências Exatas • IFRJ</span>
-                            <h3 class="destaque-title">XIX Jornada Jovens Talentos (IFRJ)</h3>
-                            <p class="destaque-desc">
-                                Projeto "Aprendendo Geometria com Euclides", desenvolvido como bolsista da
-                                <strong>FAPERJ</strong> (Fundação Carlos Chagas Filho de Amparo à Pesquisa do Estado do
-                                RJ).
-                            </p>
-                            <span class="destaque-author">Bolsista FAPERJ: <strong>Kauê Loreno</strong></span>
-                        </div>
-                    </div>
-
-                    <!-- Destaque 4: PIC Dinâmica do Asteroide 2024 YR4 -->
-                    <div class="destaque-card">
-                        <div class="destaque-trophy">🪐</div>
-                        <div class="destaque-content">
-                            <span class="destaque-tag">Iniciação Científica • Astronomia &amp; Computação</span>
-                            <h3 class="destaque-title">PIC: Dinâmica do Asteroide 2024 YR4</h3>
-                            <p class="destaque-desc">
-                                Trabalho científico de alta relevância com apresentações e seleções comprovadas:
-                            </p>
-                            <ul class="destaque-sublist">
-                                <li>4ª Mostra de Trabalhos Acadêmicos — Vírgula Hub de Inovação VR</li>
-                                <li>XX Jornada de Iniciação Científica (JORNIC) — nov/2025</li>
-                                <li>Selecionado para o <strong>25º Congresso Nacional de Iniciação Científica
-                                        (CONIC)</strong></li>
-                            </ul>
-                            <span class="destaque-author">Pesquisador: <strong>Kauê Loreno</strong></span>
-                        </div>
-                    </div>
-
-                    <!-- Destaque 5: PET-Saúde Digital -->
-                    <div class="destaque-card">
-                        <div class="destaque-trophy">🏥</div>
-                        <div class="destaque-content">
-                            <span class="destaque-tag">Programa Federal • SUS / MS / MEC</span>
-                            <h3 class="destaque-title">PET-Saúde — Informação &amp; Saúde Digital</h3>
-                            <p class="destaque-desc">
-                                Monitor no programa federal que integra instituições de ensino superior e a rede de
-                                saúde pública municipal (Prefeitura de Piraí). Atuação no <strong>GT 4 – Eixo de
-                                    Tecnologia Digital</strong> no projeto TCI Online e participação no <strong>17º
-                                    Congresso Internacional da Rede Unida</strong>.
-                            </p>
-                            <span class="destaque-author">Monitor: <strong>Kauê Loreno</strong></span>
-                        </div>
-                    </div>
-
-                    <!-- Destaque 6: Trajetória no Mercado Web -->
-                    <div class="destaque-card">
-                        <div class="destaque-trophy">🚀</div>
-                        <div class="destaque-content">
-                            <span class="destaque-tag">Experiência Profissional Contínua</span>
-                            <h3 class="destaque-title">Atlante Marketing (08/2022 – 01/2026)</h3>
-                            <p class="destaque-desc">
-                                Consolidação de quase 4 anos de atuação prática no mercado corporativo de tecnologia e
-                                comunicação: desenvolvimento web, implementação de plataformas de e-commerce, gestão de
-                                campanhas e design publicitário de alta conversão.
-                            </p>
-                            <span class="destaque-author">Desenvolvedor &amp; Designer: <strong>Pedro
-                                    Henrique</strong></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ================= FORMAÇÃO ACADÊMICA & TRAJETÓRIA ================= -->
-        <section class="section formacao" id="formacao">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-tag">05. Educação &amp; Histórico</span>
-                    <h2 class="section-title">Formação Acadêmica &amp; Experiência</h2>
-                    <div class="section-line"></div>
-                </div>
-
-                <div class="duo-timeline-grid">
-                    <!-- Coluna Pedro Henrique -->
-                    <div class="timeline-column">
-                        <div class="timeline-col-header ph-border">
-                            <span class="duo-avatar ph-avatar">PH</span>
-                            <h3>Pedro Henrique Dornellas</h3>
-                        </div>
-
-                        <div class="timeline">
-                            <!-- Item 1 -->
-                            <div class="timeline-item">
-                                <div class="timeline-dot ph-dot"></div>
-                                <div class="timeline-content">
-                                    <span class="timeline-date">01/2024 – Presente</span>
-                                    <h4 class="timeline-title">Bacharelado em Engenharia de Software</h4>
-                                    <h5 class="timeline-institution">Centro Universitário Geraldo Di Biase (UGB)</h5>
-                                    <p class="timeline-desc">
-                                        6º Período. Foco em arquitetura de software, DevOps, engenharia de requisitos,
-                                        banco de dados e metodologias ágeis.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <!-- Item 2 -->
-                            <div class="timeline-item">
-                                <div class="timeline-dot ph-dot"></div>
-                                <div class="timeline-content">
-                                    <span class="timeline-date">08/2022 – 01/2026</span>
-                                    <h4 class="timeline-title">Desenvolvedor &amp; Web Designer</h4>
-                                    <h5 class="timeline-institution">Atlante Marketing</h5>
-                                    <p class="timeline-desc">
-                                        Desenvolvimento de sites WordPress, criação de e-commerces Nuvemshop, design
-                                        gráfico avançado com Photoshop e gestão via Notion.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <!-- Item 3 -->
-                            <div class="timeline-item">
-                                <div class="timeline-dot ph-dot"></div>
-                                <div class="timeline-content">
-                                    <span class="timeline-date">Concluído</span>
-                                    <h4 class="timeline-title">Técnico em Automação Industrial &amp; Instrumentação</h4>
-                                    <h5 class="timeline-institution">SENAI - Serviço Nacional de Aprendizagem Industrial
-                                    </h5>
-                                    <p class="timeline-desc">
-                                        Controle de processos contínuos, circuitos de automação, instrumentação e lógica
-                                        de controle eletroeletrônico.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <!-- Item 4 -->
-                            <div class="timeline-item">
-                                <div class="timeline-dot ph-dot"></div>
-                                <div class="timeline-content">
-                                    <span class="timeline-date">Histórico Anterior</span>
-                                    <h4 class="timeline-title">Técnico em Informática &amp; Estágio ICT / CBSI</h4>
-                                    <h5 class="timeline-institution">Colégio ICT &amp; CBSI</h5>
-                                    <p class="timeline-desc">
-                                        Estágio de informática no ICT (2009) e atuação como Aprendiz na CBSI
-                                        (2013-2015).
-                                    </p>
-                                </div>
+                            <div class="portal-pillar-card">
+                                <div class="portal-pillar-icon">📊</div>
+                                <h4>Fundamentos &amp; Qualidade</h4>
+                                <p>Lógica de programação, modelagem relacional de dados e boas práticas de engenharia.</p>
                             </div>
                         </div>
-                    </div>
-
-                    <!-- Coluna Kauê Loreno -->
-                    <div class="timeline-column">
-                        <div class="timeline-col-header kl-border">
-                            <span class="duo-avatar kl-avatar">KL</span>
-                            <h3>Kauê Loreno Lopes</h3>
-                        </div>
-
-                        <div class="timeline">
-                            <!-- Item 1 -->
-                            <div class="timeline-item">
-                                <div class="timeline-dot kl-dot"></div>
-                                <div class="timeline-content">
-                                    <span class="timeline-date">Previsão de Término: 12/2027</span>
-                                    <h4 class="timeline-title">Bacharelado em Engenharia de Software</h4>
-                                    <h5 class="timeline-institution">Centro Universitário Geraldo Di Biase (UGB)</h5>
-                                    <p class="timeline-desc">
-                                        6º Período. Ênfase em desenvolvimento back-end com Python/Django,
-                                        microsserviços, dockerização e modelagem relacional.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <!-- Item 2 -->
-                            <div class="timeline-item">
-                                <div class="timeline-dot kl-dot"></div>
-                                <div class="timeline-content">
-                                    <span class="timeline-date">Concluído</span>
-                                    <h4 class="timeline-title">Técnico em Automação Industrial</h4>
-                                    <h5 class="timeline-institution">Instituto Federal do Rio de Janeiro (IFRJ)</h5>
-                                    <p class="timeline-desc">
-                                        Formação técnica de excelência em sistemas automatizados, programação de
-                                        controladores lógicos e modelagem de sistemas.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <!-- Item 3 -->
-                            <div class="timeline-item">
-                                <div class="timeline-dot kl-dot"></div>
-                                <div class="timeline-content">
-                                    <span class="timeline-date">Atual</span>
-                                    <h4 class="timeline-title">PET-Saúde — Informação e Saúde Digital</h4>
-                                    <h5 class="timeline-institution">Ministérios da Saúde e Educação • Pref. Piraí</h5>
-                                    <p class="timeline-desc">
-                                        Monitor atuante no Eixo de Tecnologia Digital (GT 4) no projeto Terapia
-                                        Comunitária Integrativa Online e eventos científicos.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <!-- Item 4 -->
-                            <div class="timeline-item">
-                                <div class="timeline-dot kl-dot"></div>
-                                <div class="timeline-content">
-                                    <span class="timeline-date">Bolsista de Pesquisa</span>
-                                    <h4 class="timeline-title">Bolsista FAPERJ — Jovens Talentos para a Ciência</h4>
-                                    <h5 class="timeline-institution">IFRJ / FAPERJ</h5>
-                                    <p class="timeline-desc">
-                                        Iniciação científica no desenvolvimento do software 'Aprendendo Geometria com
-                                        Euclides', premiado com o 1º lugar na Jornada JT.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ================= CONTATO ================= -->
-        <section class="section contato" id="contato">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-tag">06. Conecte-se Conosco</span>
-                    <h2 class="section-title">Entre em Contato</h2>
-                    <p class="section-desc">Estamos abertos a oportunidades de estágio, projetos de engenharia,
-                        parcerias e pesquisas.</p>
-                    <div class="section-line"></div>
-                </div>
-
-                <div class="contato-grid">
-                    <!-- Cards de Contato dos Estudantes -->
-                    <div class="contato-cards-container">
-                        <!-- Card Pedro Henrique -->
-                        <div class="contact-card">
-                            <div class="contact-card-top">
-                                <div class="duo-avatar ph-avatar">PH</div>
-                                <div>
-                                    <h4>Pedro Henrique Dornellas</h4>
-                                    <span>Web Dev &amp; Web Designer</span>
-                                </div>
-                            </div>
-                            <div class="contact-items">
-                                <div class="contact-item">
-                                    <span class="c-icon">📍</span>
-                                    <div>
-                                        <small>Localização</small>
-                                        <p>Barra do Piraí – RJ (Morada do Vale)</p>
-                                    </div>
-                                </div>
-                                <div class="contact-item">
-                                    <span class="c-icon">✉️</span>
-                                    <div>
-                                        <small>E-mail</small>
-                                        <a
-                                            href="mailto:dornellas.profissional@gmail.com">dornellas.profissional@gmail.com</a>
-                                    </div>
-                                </div>
-                                <div class="contact-item">
-                                    <span class="c-icon">📞</span>
-                                    <div>
-                                        <small>Telefone / WhatsApp</small>
-                                        <a href="tel:+5524998188280">(24) 99818-8280</a>
-                                    </div>
-                                </div>
-                                <div class="contact-item">
-                                    <span class="c-icon">💼</span>
-                                    <div>
-                                        <small>Experiência Atual</small>
-                                        <p>Atlante Marketing (Dev/Designer)</p>
-                                    </div>
-                                </div>
-                                <div class="contact-item">
-                                    <span class="c-icon">🔗</span>
-                                    <div>
-                                        <small>Redes Técnicas</small>
-                                        <div class="contact-links-inline">
-                                            <a href="https://www.linkedin.com/in/pedro-henrique-dornellas/"
-                                                target="_blank" rel="noopener noreferrer">LinkedIn</a> •
-                                            <a href="https://github.com/dornellasz93" target="_blank"
-                                                rel="noopener noreferrer">GitHub</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Card Kauê Loreno -->
-                        <div class="contact-card">
-                            <div class="contact-card-top">
-                                <div class="duo-avatar kl-avatar">KL</div>
-                                <div>
-                                    <h4>Kauê Loreno Lopes</h4>
-                                    <span>Back-end &amp; Pesquisador</span>
-                                </div>
-                            </div>
-                            <div class="contact-items">
-                                <div class="contact-item">
-                                    <span class="c-icon">📍</span>
-                                    <div>
-                                        <small>Localização</small>
-                                        <p>Volta Redonda – RJ</p>
-                                    </div>
-                                </div>
-                                <div class="contact-item">
-                                    <span class="c-icon">✉️</span>
-                                    <div>
-                                        <small>E-mail</small>
-                                        <a href="mailto:lorenokaue3p@gmail.com">lorenokaue3p@gmail.com</a>
-                                    </div>
-                                </div>
-                                <div class="contact-item">
-                                    <span class="c-icon">📞</span>
-                                    <div>
-                                        <small>Telefone / WhatsApp</small>
-                                        <a href="tel:+5524998237305">(24) 99823-7305</a>
-                                    </div>
-                                </div>
-                                <div class="contact-item">
-                                    <span class="c-icon">🔗</span>
-                                    <div>
-                                        <small>Redes Técnicas</small>
-                                        <div class="contact-links-inline">
-                                            <a href="https://linkedin.com/in/kaueloreno" target="_blank"
-                                                rel="noopener noreferrer">LinkedIn</a> •
-                                            <a href="https://github.com/ArchKeyor" target="_blank"
-                                                rel="noopener noreferrer">GitHub</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Formulário de Contato -->
-                    <div class="contato-form-container">
-                        <form class="contato-form" action="mailto:lorenokaue3p@gmail.com" method="POST"
-                            enctype="text/plain">
-                            <div class="form-group">
-                                <label for="destinatario">Destinatário da Mensagem</label>
-                                <select id="destinatario" name="destinatario" class="form-select">
-                                    <option value="dupla">Para a Dupla (Pedro Henrique &amp; Kauê Loreno)</option>
-                                    <option value="pedro">Para Pedro Henrique Dornellas</option>
-                                    <option value="kaue">Para Kauê Loreno Lopes</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="nome">Seu Nome / Empresa</label>
-                                <input type="text" id="nome" name="nome"
-                                    placeholder="Digite seu nome completo ou da empresa" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Seu E-mail de Contato</label>
-                                <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="assunto">Assunto</label>
-                                <input type="text" id="assunto" name="assunto"
-                                    placeholder="Ex: Proposta de Estágio / Oportunidade / Projeto" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="mensagem">Mensagem</label>
-                                <textarea id="mensagem" name="mensagem" rows="4"
-                                    placeholder="Escreva sua mensagem detalhada aqui..." required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary btn-block">
-                                Enviar Mensagem
-                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2">
-                                    <line x1="22" y1="2" x2="11" y2="13"></line>
-                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                                </svg>
-                            </button>
-                        </form>
                     </div>
                 </div>
             </div>
@@ -1111,49 +301,19 @@
             <div class="footer-brand">
                 <img src="logo_ugb.png" alt="Logo UGB FERP" class="footer-ugb-logo">
                 <div class="footer-text">
-                    <p>&copy; 2026 <strong>Pedro Henrique Dornellas</strong> &amp; <strong>Kauê Loreno Lopes</strong></p>
-                    <p class="footer-sub">Engenharia de Software • 6º Período • Centro Universitário Geraldo Di Biase (UGB)
+                    <p>&copy; 2026 <strong>Pedro Henrique Dornellas</strong> • <strong>Kauê Loreno Lopes</strong> • <strong>João Marcelo Bergamini</strong></p>
+                    <p class="footer-sub">Bacharelado em Engenharia de Software • Centro Universitário Geraldo Di Biase (UGB • FERP)
                         • Disciplina de DevOps</p>
                 </div>
             </div>
-            <a href="#hero" class="back-to-top" title="Voltar ao Topo" aria-label="Voltar ao Topo">↑</a>
+            <div style="display: flex; gap: 0.8rem; align-items: center; flex-wrap: wrap;">
+                <a href="pedro/index.html" class="nav-link-switch">Pedro</a>
+                <a href="kaue/index.html" class="nav-link-switch">Kauê</a>
+                <a href="joao/index.html" class="nav-link-switch">João Marcelo</a>
+                <a href="#portal" class="back-to-top" title="Voltar ao Topo" aria-label="Voltar ao Topo">↑</a>
+            </div>
         </div>
     </footer>
-
-    <!-- Scripts de Interatividade Leve -->
-    <script>
-        // Terminal Tab Switcher
-        function switchTab(btn, tabId) {
-            document.querySelectorAll('.code-tab').forEach(tab => tab.classList.remove('active'));
-            document.querySelectorAll('.code-tab-content').forEach(content => content.classList.remove('active'));
-
-            const selectedContent = document.getElementById('tab-' + tabId);
-            if (selectedContent) {
-                selectedContent.classList.add('active');
-            }
-            if (btn) {
-                btn.classList.add('active');
-            }
-        }
-
-        // Skills Filter
-        function filterSkills(btn, type) {
-            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-            if (btn) {
-                btn.classList.add('active');
-            }
-
-            const categories = document.querySelectorAll('.skill-category');
-            categories.forEach(cat => {
-                const students = cat.getAttribute('data-student') || '';
-                if (type === 'all' || students.includes(type)) {
-                    cat.style.display = 'flex';
-                } else {
-                    cat.style.display = 'none';
-                }
-            });
-        }
-    </script>
 
 </body>
 
